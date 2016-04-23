@@ -1,0 +1,3037 @@
+﻿<MainWindow xmlns="">
+  <!--  Information about this language and the author of this translation file -->
+  <LangInfo>
+    <AuthorName Name="Damn3d (avec l'aide très appréciable de Stev')"/>
+    <Version Name="15.0"/>
+    <Contact Name="Damn3d sur http://www.manager-online.fr"/>
+    <LangName Name="Français"/>
+  </LangInfo>
+
+  <!--  Main Window toolbar icons and buttons texts -->
+  <Toolbar>
+    <Buttons>
+      <LoadGame Name="Charger"/>
+      <CurrentScreen Name="Fenêtre FM"/>
+      <Options Name="Options"/>
+      <Donate Name="Donation"/>
+      <SaveChanges Name="Sauvegarder"/>
+      <Favorites Name="Favoris"/>
+    </Buttons>
+  </Toolbar>
+
+  <!-- Main Window tabControl -->
+  <MainTabControl>
+    <SearchTab Name="Résultats de la recherche"/>
+  </MainTabControl>
+
+  <EditorInfo>
+    <SupportedVersion ID="15.0.0.000"/>
+  </EditorInfo>
+  <!-- Search Screen text -->
+  <SearchScreen>
+    <Results
+	         AgentsFound="Agents - "
+	         StadiumsFound="Stades - "
+             OfficialFound="Arbitres - "
+             InjuriesFound="Blessures - "
+             WeatherFound="Météo - "
+             CompetitionsFound="Compétitions - "
+             CitiesFound="Villes - "
+             StaffFound="Staff - "
+             PlayersFound="Joueurs - "
+             NationsFound="Nations - "
+             TeamsFound="Clubs - "
+			 AwardsFound="Récompenses - "
+             MediaSourceFound="Sources médias - "
+             Matches=" résultats"/>
+    <Options>
+      <SearchForStadiums Name="Recherche de stades"/>
+      <SearchForAgents Name="Recherche d'agents"/>
+      <SearchForOfficial Name="Recherche d'arbitres"/>
+      <SearchForInjuries Name="Recherche de blessures"/>
+      <SearchForWeather Name="Recherche de météo"/>
+      <SearchForCompetitions Name="Recherche de compétitions"/>
+      <SearchForCities Name="Recherche de villes"/>
+      <SearchForStaff Name="Recherche de staff"/>
+      <SearchForPlayers Name="Recherche de joueurs"/>
+      <SearchForNations Name="Recherche de pays"/>
+      <SearchForTeams Name="Recherche d'équipes"/>
+      <BtnSelectAll Name="Rechercher tout"/>
+      <BtnClear Name="Effacer"/>
+    </Options>
+    <FreePlayer Name="Joueur libre"/>
+    <FreeStaff Name="Staff libre"/>
+    <ContractExpired Name="Expiré"/>
+    <ContractExpiring6Mon Name="Expire dans 6 mois"/>
+    <ContractExpiring1Year Name="Expire dans un an"/>
+    <TeamStatusTransferListed Name="Liste des transferts"/>
+    <TeamStatusListedForLoan Name="Liste des prêts"/>
+    <EUNational Name="Nation UE"/>
+    <SearchOtherNationalities Name="Inclure d'autres nationalités"/>
+    <Division Name="Division"/>
+    <SearchDivisionTitleMessage Name="Recherche..."/>
+    <SearchDivisionSearchMessage Name="Taper le nom de la division"/>
+    <IntCaps Name="Sél. Int."/>
+    <IntGoals Name="Buts en sél."/>
+    <Feet Name="Pied"/>
+    <AgeAverage Name="Moyenne d'âge"/>
+    <Tabs>
+      <Players>
+        <General Name="Général"/>
+        <Contract Name="Contrat"/>
+        <TechnicalGK Name="Technique/Gardiens"/>
+        <Mental Name="Mental"/>
+        <Physical Name="Physique/Cachés"/>
+      </Players>
+      <Staff>
+        <General Name="Général"/>
+        <CoachingMental Name="Coaching/Mental"/>
+        <Tactical Name="Tactique/Non-tactique"/>
+        <Others Name="Autres"/>
+      </Staff>
+    </Tabs>
+    <PlayerFilter Name="FMRTE - Type de fichier du filtre des joueurs"/>
+    <StaffFilter Name="FMRTE - Type de fichier du filtre du staff"/>
+    <ClubFilter Name="FMRTE - Type de fichier du filtre des clubs"/>
+    <LoadFilter Name="Charger"/>
+    <SaveFilter Name="Sauvegarder"/>
+    <ClearFilter Name="Nettoyer"/>
+    <FilterButton Name="Option du filtre"/>
+  </SearchScreen>
+
+  <MassEdit Name="Editeur en masse">
+    <WindowTitle Name="Editeur en masse"/>
+    <MatchCAPA Name="Correspondance CA à PA"/>
+    <ApplyTo Name="Appliquer à"/>
+    <PressToFilter Name="Appuyez pour filtrer"/>
+    <Apply Name="Appliquer"/>
+    <Players Name="joueurs"/>
+    <Staff Name="membres du staff"/>
+    <Clubs Name="clubs"/>
+    <ListEmpty Name="Les résultats du filtre sont vides, vous devez d'abord appuyer sur le bouton de filtre."/>
+    <AreYouSure Name="Êtes-vous sûr? Vous devriez faire une copie de votre sauvegarde, cette opération n'est pas réversible."/>
+    <OperationFinished Name="L'opération de l'éditeur en masse est maintenant terminée."/>
+    <ERROR Name="Erreur"/>
+    <INFO Name="Information"/>
+    <WARNING Name="Attention"/>
+  </MassEdit>
+
+  <!--  TreeView Items  -->
+  <TreeView>
+    <!-- Intro Tree Items -->
+    <Intro Name="FM - Real Time Editor">
+      <Information Name="Informations"/>
+      <Contributions Name="Contributions"/>
+    </Intro>
+
+    <!-- Settings Tree Items -->
+    <Settings Name="Options">
+      <General Name="Général"/>
+      <ClubSettings Name="Club"/>
+    </Settings>
+
+    <!-- Player Tree Items -->
+    <Player Name="Joueur">
+      <Information Name="Informations"/>
+      <Positions Name="Position(s)"/>
+      <PreferedMoves Name="Mouvement(s) préféré(s)"/>
+      <Contract Name="Contrat"/>
+      <Relations Name="Relation(s)"/>
+      <ScoutInfo Name="Scout"/>
+      <GeneralRating Name="Note générale"/>
+      <PositionalRating Name="Note position"/>
+      <Swap Name="Éch. joueur"/>
+    </Player>
+
+    <!-- Staff Tree Items -->
+    <Staff Name="Staff">
+      <Information Name="Information"/>
+      <CoachAttributes Name="Attributs"/>
+      <Contract Name="Contrat"/>
+      <Relations Name="Relation(s)"/>
+    </Staff>
+
+    <!-- Club Tree Items -->
+    <Club Name="Club">
+      <Information Name="Information"/>
+      <Finances Name="Finances"/>
+      <Teams Name="Équipes"
+			 Singular="Équipe" />
+      <!-- Team Type -->
+      <Team0 Name=""/>
+      <Team1 Name="Réserve"/>
+      <Team3 Name="B"/>
+      <Team9 Name="U23"/>
+      <Team10 Name="U21"/>
+      <Team11 Name="U19"/>
+      <Team12 Name="U18"/>
+      <Team13 Name="C"/>
+      <Team18 Name="U20"/>
+      <Team22 Name="Jeunes"/>
+      <TeamUnknown Name="Inconnu"/>
+      <PossibleSignings Name="Signature éventuelle"/>
+    </Club>
+  </TreeView>
+
+  <!--.  Player Information Screen  .-->
+  <PlayerInformation>
+    <ChangeNames>
+      <ChangeFirstName Name="Changer le prénom du joueur"/>
+      <ChangeLastName Name="Changer le nom du joueur"/>
+      <ChangeCommonName Name="Changer le surnom du joueur"/>
+      <SearchPlayersNamesMessage Name="Entrer le nom que vous voulez donner à votre joueur"/>
+    </ChangeNames>
+    <PersonalDetails Name="Infos personnelles">
+      <Attributes>
+        <FirstName Name="Prénom"/>
+        <LastName Name="Nom"/>
+        <CommonName Name="Surnom"/>
+        <Nationality Name="Nationalité"/>
+        <Born Name="Date de naissance"/>
+        <Height Name="Taille"/>
+        <Weight Name="Poids"/>
+        <Value Name="Valeur"/>
+        <HairSkinColour Name="Cheveux/Peau"/>
+        <UID Name="ID"/>
+        <DaysInCountry Name="Nb de jours dans le pays actuel"/>
+        <AskValue Name="Prix demandé"/>
+        <IntCapsGoals Name="Sél int. / But(s)"/>
+        <SubCapsGoals Name="Sél esp. / But(s)"/>
+        <LeftFoot Name="Pied gauche"/>
+        <RightFoot Name="Pied droit"/>
+        <ShowGKAttributes Name="Afficher les caract. de gardien"/>
+      </Attributes>
+      <Details Name="Détails">
+        <MatchExercise Name="Niveau de préparation"/>
+        <Morale Name="Moral"/>
+        <Jadedness Name="Fatigue"/>
+        <MatchSharpness Name="Condition physique"/>
+        <Injury Name="Blessé"/>
+        <Banned Name="Suspendu"/>
+        <CurrentRating Name="Note actuelle"/>
+        <PotentialRating Name="Note potentielle"/>
+      </Details>
+    </PersonalDetails>
+    <Presets Name="Modèles">
+      <Legend Name="Légende"/>
+      <WorldClass Name="Classe mondiale"/>
+      <International Name="International"/>
+      <Pro Name="Pro"/>
+      <Average Name="Semi-pro"/>
+      <Poor Name="Amateur"/>
+      <VeryPoor Name="Semi-Amateur"/>
+      <Plus Name="+1"/>
+      <Minus Name="-1"/>
+    </Presets>
+    <SaveMessage Name="Les informations du joueur ont été sauvegardées"/>
+  </PlayerInformation>
+  <!-- (: Trad by Damn3d|74y75y@gmail.com :) -->
+  <!--  Scout General Positions  -->
+  <Scout>
+    <GeneralPositions>
+      <Overview Name="Postes">
+        <GoalKeeper Name="Gardien"/>
+        <Sweeper Name="Libéro"/>
+        <CenterBack Name="Défenseur central"/>
+        <FullBack Name="Défenseur latéral"/>
+        <WingBack Name="Arrière latéral"/>
+        <DefensiveMidfielder Name="Milieu défensif"/>
+        <Midfielder Name="Milieu"/>
+        <WideMidfielder Name="Milieu excentré"/>
+        <AtackingMidfielder Name="Milieu offensif"/>
+        <Winger Name="Ailier"/>
+        <FastStriker Name="Attaquant rapide"/>
+        <TargetStriker Name="Attaquant à cibler"/>
+      </Overview>
+      <Current Name="Actuel"/>
+      <Potential Name="Potentiel"/>
+    </GeneralPositions>
+  </Scout>
+
+  <!--  Player Positions  -->
+  <PlayerPositions Name="Positions">
+    <GK Name="Gardien de But"/>
+    <SW Name="Libéro"/>
+    <DEF Name="Défenseur"/>
+    <WB Name="Arrière latéral"/>
+    <DM Name="Milieu défensif"/>
+    <MID Name="Milieu"/>
+    <AM Name="Milieu offensif"/>
+    <FREEROLE Name="Rôle libre"/>
+    <ATC Name="Attaquant"/>
+    <DL Name="Défenseur gauche"/>
+    <DC Name="Défenseur central"/>
+    <DR Name="Défenseur droit"/>
+    <DM Name="Milieu défensif"/>
+    <ML Name="Milieu gauche"/>
+    <MC Name="Milieu centre"/>
+    <MR Name="Milieu droit"/>
+    <AML Name="Milieu offensif gauche"/>
+    <AMC Name="Milieu offensif centre"/>
+    <AMR Name="Milieu offensif droit"/>
+    <ST Name="Attaquant"/>
+    <WBL Name="Arrière latéral gauche"/>
+    <WBR Name="Arrière latéral droit"/>
+    <RightSide Name="Côté droit"/>
+    <LeftSide Name="Côté gauche"/>
+    <CenterSide Name="Centre"/>
+    <SaveMessage Name="Les positions du joueurs ont été sauvegardées"/>
+  </PlayerPositions>
+  <!-- New Positions -->
+  <PlayerNewPositions Name="Nouvelles positions">
+    <DL Name="Défenseur gauche"/>
+    <DC Name="Défenseur central"/>
+    <DR Name="Défenseur droit"/>
+    <DM Name="Milieu défensif"/>
+    <ML Name="Milieu gauche"/>
+    <MC Name="Milieu centre"/>
+    <MR Name="Milieu droit"/>
+    <AML Name="Milieu offensif gauche"/>
+    <AMC Name="Milieu offensif centre"/>
+    <AMR Name="Milieu offensif droit"/>
+    <ST Name="Attaquant"/>
+    <WBL Name="Arrière latéral gauche"/>
+    <WBR Name="Arrière latéral droit"/>
+  </PlayerNewPositions>
+
+  <!--  Player Technical Attributes  -->
+  <TechnicalAttributes Name="Caract. techniques">
+    <Crossing Name="Centres"/>
+    <Dribbling Name="Dribble"/>
+    <Finishing Name="Finition"/>
+    <Heading Name="Tête"/>
+    <LongShots Name="Tirs de loin"/>
+    <Marking Name="Marquage"/>
+    <Passing Name="Passes"/>
+    <Tackling Name="Tacles"/>
+    <FirstTouch Name="Contrôle de balle"/>
+    <Technique Name="Technique"/>
+    <Penalty Name="Penalty"/>
+    <Corner Name="Corners"/>
+    <SetPieces Name="Coup-francs"/>
+    <LongThrows Name="Touches longues"/>
+  </TechnicalAttributes>
+
+  <!--  Player GK Attributes  -->
+  <GKAttributes Name="Caract. de gardien">
+    <AerialAbility Name="Sorties aériennes"/>
+    <CommandOfArea Name="Autorité"/>
+    <Communication Name="Communication"/>
+    <Eccentricity Name="Excentricité"/>
+    <Handling Name="Prise de balle"/>
+    <Kicking Name="Dégagements"/>
+    <OneOnOnes Name="Un contre un"/>
+    <Reflexes Name="Réflexes"/>
+    <RushingOut Name="Sorties dans les pieds"/>
+    <TendencyToPunch Name="Contrôle de balle"/>
+    <Throwing Name="Relance à la main"/>
+  </GKAttributes>
+
+  <!--.  Player Mental Attributes  .-->
+  <MentalAttributes Name="Caract. mentales">
+    <Aggression Name="Agressivité"/>
+    <Anticipation Name="Anticipation"/>
+    <Bravery Name="Courage"/>
+    <Composure Name="Sang-froid"/>
+    <Concentration Name="Concentration"/>
+    <Vision Name="Créativité"/>
+    <Decisions Name="Décisions"/>
+    <Determination Name="Détermination"/>
+    <Flair Name="Style"/>
+    <Leadership Name="Leadership"/>
+    <OffTheBall Name="Appels de balle"/>
+    <Positioning Name="Placement"/>
+    <TeamWork Name="Collectif"/>
+    <WorkRate Name="Activité"/>
+  </MentalAttributes>
+
+  <!--  Player Physical Attributes  -->
+  <PhysicalAttributes Name="Caract. physiques">
+    <Acceleration Name="Accélération"/>
+    <Agility Name="Agilité"/>
+    <Balance Name="Équilibre"/>
+    <Jumping Name="Saut"/>
+    <NaturalFitness Name="Qualités phys. nat."/>
+    <Pace Name="Vitesse"/>
+    <Stamia Name="Endurance"/>
+    <Strength Name="Puissance"/>
+    <InjuryProneness Name="Prédisp. aux bless."/>
+  </PhysicalAttributes>
+
+  <!--  Player Hidden Attributes  -->
+  <HiddenAttributes Name="Caract. cachées">
+    <Consistency Name="Régularité"/>
+    <Dirtiness Name="Violence"/>
+    <ImpMatches Name="Matchs importants"/>
+    <Versatility Name="Polyvalence"/>
+  </HiddenAttributes>
+
+  <!--  Person Personality Attributes  -->
+  <PersonalityAttributes Name="Personnalité">
+    <Adaptability Name="Adaptation"/>
+    <Ambition Name="Ambition"/>
+    <Loyalty Name="Loyauté"/>
+    <Pressure Name="Pression"/>
+    <Professional Name="Professionnel"/>
+    <Sportsmanship Name="Sportivité"/>
+    <Temperament Name="Tempérament"/>
+    <Controversy Name="Controverse"/>
+  </PersonalityAttributes>
+
+  <!-- Persons Reputation-->
+  <PersonReputation Name="Réputation" >
+    <Home Name="Nationale"/>
+    <Current Name="Actuelle"/>
+    <World Name="Mondiale"/>
+  </PersonReputation>
+
+  <!-- Persons Ability-->
+  <PersonAbility Name="Potentiel">
+    <CA Name="Niveau act."/>
+    <PA Name="Potentiel."/>
+    <DIF Name="Différence"/>
+  </PersonAbility>
+
+  <!-- Player Contracts Screen -->
+  <PlayerContract>
+    <Type Name="Type"/>
+    <Wages Name="Salaire"/>
+    <Started Name="Début"/>
+    <Expires Name="Fin"/>
+    <Bonuses Name="Prime"/>
+    <JoinedClub Name="A rejoint le club le"/>
+    <LoanFrom Name="Prêt en provenance de"/>
+    <AgreedPrice Name="Accord sur le prix"/>
+    <Value Name="Valeur"/>
+    <AskingPrice Name="Prix demandé"/>
+    <Clausules Name="Clauses"/>
+    <TeamStatus Name="Statut de l'équipe"/>
+    <TransfLoanStatus Name="Statut Transfert/Prêt"/>
+    <Happiness Name="Heureux"/>
+    <Unhappy Name="Malheureux">
+      <BtnSelectAll Name="Sélectionner tout"/>
+      <BtnClear Name="Effacer"/>
+    </Unhappy>
+    <ContractDetails Name="Détails du contrat"/>
+    <TransferDetails Name="Détails du transfert"/>
+    <ContractsType>
+      <Loan Name="Prêt"/>
+      <NonContract Name="Sans contrat"/>
+      <Youth Name="Contrat de jeune"/>
+      <PartTime Name="Contrat à mi-temps"/>
+      <FullTime Name="Contrat à plein-temps"/>
+    </ContractsType>
+    <SaveMessage Name="Le contrat du joueur a été sauvegardé"/>
+  </PlayerContract>
+
+  <!-- Club Finances Screen -->
+  <ClubFinances Name="Finances">
+    <TransferBudgetSeason Name="Budget des transferts (saison)"/>
+    <TransferBudgetRemain Name="Budget des transferts (restant)"/>
+    <PercentageAvaiable Name="% du budget transfert reversé"/>
+    <Sponsors Name="Sponsors"/>
+    <LoansOutStanding Name="Prêts restant à rembourser"/>
+    <Balance Name="Balance"/>
+    <WageBudget Name="Budget des salaires (saison)"/>
+    <WageUsed Name="Budget des salaires (restant)"/>
+    <SugarDaddy Name="Mécène">
+      <Foreground Name="Premier plan"/>
+      <Background Name="Arrière plan"/>
+      <Underwriter Name="Courtier"/>
+      <IncreasesStartingFinances Name="Sugar Daddy Increases Starting Finances"/>
+    </SugarDaddy>
+    <AverageMatchTicketPrice Name="Prix moyen d'un ticket"/>
+    <AverageSeasonTicketPrice Name="Prix moyen de l'abonnement"/>
+    <NumberOfSeasonTickerHolders Name="Nombre d'abonnements"/>
+    <TransfersEmbargo Name="Embargo sur les transferts">
+      <StartDate Name="Date de début de l'Embargo"/>
+      <EndDate Name="Date de fin de l'Embargo"/>
+      <AppealDate Name="Date de l'appel de l'Embargo"/>
+    </TransfersEmbargo>
+    <StadiumRentalPerYear Name="Loyer du stade annuel"/>
+    <SaveMessage Name="Les finances du clubs ont été sauvegardées"/>
+    <MaxWage Name="Salaire Maximum (approx)" />
+  </ClubFinances>
+
+  <!-- Club Players List Columns Names -->
+  <ClubPlayersList>
+    <FixInternationalWithdrawal Name="Retirer la consigne internationale"/>
+    <Morale Name="Moral"/>
+    <DisplayedName Name="Nom"/>
+    <FirstName Name="Prénom"/>
+    <LastName Name="Nom"/>
+    <CommonName Name="Surnom"/>
+    <NationName Name="Nation"/>
+    <Value Name="Valeur"/>
+    <AskValue Name="Valeur demandée"/>
+    <PlayerID Name="ID Joueur"/>
+    <NationID Name="ID Nation"/>
+    <Born Name="Date de naissance"/>
+    <CA Name="Niveau actuel"/>
+    <PA Name="Potentiel possible"/>
+    <IsInjured Name="Est blessé"/>
+    <IsBaned Name="Est suspendu"/>
+    <Age Name="Age"/>
+    <Condition Name="Condition (%)"/>
+    <GroupBox Name="Options"/>
+    <CreateHistoryPoints Name="Créer un historique"/>
+    <HealButton Name="Soigner l'équipe"/>
+    <InspireButton Name="Motiver l'équipe"/>
+    <UnbanButton Name="Enlever les suspensions"/>
+    <DestroyButton Name="Fatiguer l'équipe"/>
+    <HealMessage Name="Tous les joueurs ont été soignés."/>
+    <InspireMessage Name="Tous les joueurs ont été motivés."/>
+    <UnbanMessage Name="Toutes les suspensions ont été supprimées."/>
+    <DestroyMessage Name="Tous les joueurs sont maintenant hors de forme."/>
+    <HistoryPointsMessage Name="L'historique a été crée pour tous les joueurs"/>
+  </ClubPlayersList>
+
+  <!--.Clubs Kits.-->
+  <Kits Name="Maillots">
+    <Kit Name="Maillot"/>
+  </Kits>
+
+  <!-- Club Affiliations-->
+  <Affiliations Name="Affiliations">
+    <List>
+      <Teams Name="Equipes"/>
+      <Type Name="Type"/>
+    </List>
+    <Options Name="Informations">
+      <Parent Name="Club principal"/>
+      <Feeder Name="Club affilié"/>
+      <StartDate Name="Date de départ"/>
+      <MainBenefit Name="Avantage principal"/>
+      <AnnualFee Name="Paiement annuel"/>
+      <Benefits Name="Bénéfices de l'affiliation">
+        <YouthTeamTraining Name="De jeunes joueurs du club principal peuvent venir s'entraîner dans les locaux du club affilié pour engranger de l'expérience. Cela donnera l'occassion au staff du club principal d'observer les joueurs du club affilié."/>
+        <SameBoard Name="Même direction"/>
+        <Renewable Name="Le partenariat entre les deux clubs est un accord à long terme."/>
+      </Benefits>
+    </Options>
+    <MainBenefits>
+      <Local Name="Un accord de partenariat régional permettant de prêter des joueurs"/>
+      <National Name="Un accord de partenariat national permettant de prêter des joueurs"/>
+      <InterNational Name="Un accord de partenariat international permettant de prêter des joueurs"/>
+      <FirstOption Name="L'équipe mère a la priorité sur les joueurs du club affilié"/>
+      <AvoidWorkPermit Name="Permet de ne pas utiliser les permis de travail"/>
+      <FinancialBenefits Name="Bénéfices financiers pour les deux équipes"/>
+      <NA Name="N/A"/>
+    </MainBenefits>
+    <Benefits>
+      <MoveFreely Name="Les joueurs peuvent changer librement de club."/>
+      <GoOnLoan Name="Les joueurs peuvent être prêtés, le salaire est payé par le club principal et peut être rappeller à tout moment."/>
+      <FirstOption Name="Le club principal a une option sur tous les joueurs du club affilié."/>
+      <PlayFriendlies Name="Le club affilié recevra la rencontre amicale annuelle entre les deux clubs."/>
+      <AnnualPayment Name="Le club principal règle une somme annuel au club affilié."/>
+      <HelpFeederClub Name="Le club affilié partage ses structures d'entrainement avec le club principal."/>
+      <MerchandisingSales Name="La présence du club principal dans le pays du club affilié booste les ventes des produits dérivés."/>
+      <SendYouthPlayersToTrainAtParentToGainExperience Name="Le club principal envoie un jeune joueur pour qu'il obtienne de l'expérience."/>
+      <LongTermDeal Name="Association à long terme"/>
+      <YouthTeamTraining Name="Entraînement des jeunes"/>
+      <PermanentDeal Name="Accord définitif" />
+      <SameBoard Name="Mêmes dirigeants" />
+      <MerchandisingSales Name="Rapports marketing" />
+      <ScoutingKnowledgeShared Name="Connaissance recrutement partagées" />
+      <CannotPlayInSameDivision Name="Ne peut pas jouer dans la même division" />
+      <Renewable Name="Renouvelable" />
+      <FinancialHelp Name="Aide financière" />
+      <HelpWithFacilities Name="Aide concernant les infrastructures" />
+    </Benefits>
+    <EditAffiliation>
+      <ChangeParent Name="Changer le club principal"/>
+      <ChangeFeeder Name="Changer le club affilié"/>
+      <SearchClubMessage Name="Entrer le nom du club à rechercher"/>
+    </EditAffiliation>
+    <Type Name="Type">
+      <NormalAffiliatedClub Name="Club affilié normal"/>
+      <SubTeam Name="Équipe remplaçante"/>
+      <FeederTeam Name="Équipe affliée"/>
+      <Club_B Name="Équipe B"/>
+      <Club_C Name="Équipe C"/>
+      <Club_2 Name="Équipe 2"/>
+      <Club_3 Name="Équipe 3"/>
+      <Club_II Name="Équipe II"/>
+      <GoodRelations Name="Bonnes relations"/>
+      <LikelyFriendly Name="Sûrement amicales"/>
+    </Type>
+    <SaveMessage Name="Les affiliations du club ont été sauvegardées"/>
+  </Affiliations>
+
+  <!-- Club Information Screen -->
+  <ClubInformation Name="Informations">
+    <ManagersStatus Name="Managers Status"/>
+    <ChairmanStatus Name="Etat du président"/>
+    <CorporateFacilities Name="Services d'entreprise"/>
+    <Status
+      Prof="Professionnel"
+      SemiPro="Semi-professionnel"
+      Amateur="Amateur"
+    />
+    <Nation Name="Nation"/>
+    <YearFounded Name="Année de fondation"/>
+    <Status Name="Status"/>
+    <Reputation Name="Réputation"/>
+    <FavouredPer Name="Personne(s) préférée(s)"/>
+    <DislikedPer Name="Personne(s) détestée(s)"/>
+    <FierceRivals Name="Ennemis jurés"/>
+    <OtherRivals Name="Autres rivaux"/>
+    <Facilities Name="Structures d'entraînement"/>
+    <YouthFacilities Name="Structures de formation"/>
+    <YouthAcademy Name="Centre de formation"/>
+    <JuniorCoaching Name="Encadrement des jeunes"/>
+    <YouthRecruitment Name="Recrutement des jeunes"/>
+    <Morale Name="Moral"/>
+    <AvgAttend Name="Affluence moyenne"/>
+    <MaxAttend Name="Affluence maximum"/>
+    <MinAttend Name="Affluence minimum"/>
+    <PreviousReputation Name="Réputation précédente" />
+    <SaveMessage Name="Les informations du club ont été sauvegardées"/>
+  </ClubInformation>
+
+  <!--  Stadium Information -->
+  <Stadium Name="Stadium" Plural="Stade">
+    <ID Name="ID"/>
+    <Location Name="Lieu"/>
+    <Common>
+      <ChangeStadium Name="Changer de stade"/>
+      <SearchStadiumMessage Name="Entrer le nom du stade à rechercher"/>
+      <ChangeStadiumLocation Name="Changer le lieu du stade"/>
+      <SearchCityMessage Name="Entrer la ville à rechercher"/>
+      <ChangeStadiumOwner Name="Changer le propriétaire" />
+      <SearchOwnerMessage Name="Taper le nom du nouveau propriétaire" />
+      <ChangeNearbyStadium Name="Changer le stade à proximité" />
+      <SearchNearbyStadiumMessage Name="Taper le nom du nouveau stade à proximité" />
+    </Common>
+    <Name Name="Nom"/>
+    <Capacity Name="Capacité"/>
+    <Seating Name="Places assises"/>
+    <UsedCapacity Name="Utilisation de la capacité"/>
+    <ExpCapacity Name="Capacité d'expansion"/>
+    <PitchDimen Name="Dimensions du terrain"/>
+    <Length Name="Longueur:"/>
+    <Width Name="Largeur:"/>
+    <Roof Name="Toit"/>
+    <UndersoilHeating Name="Chauffage de la pelouse"/>
+    <PitchCondition Name="Etat du terrain"/>
+    <SaveMessage Name="Les informations du stade ont été enregistré."/>
+    <BuiltDate Name="Date de construction"/>
+    <AllSeaterCompetitions Name="Capacité pour compétitions avec places assises uniquement" />
+    <MaxPitchDimen Name="Dimensions maximum du terrain" />
+    <PitchType Name="Type de terrain">
+      <Grass Name="Pelouse" />
+      <Synthetic_Soft Name="Synthétique (Nouveau - Souple)" />
+      <Synthetic_Hard Name="Synthétique (Démodé - Dur)" />
+      <Gravel_Clay_Sand Name="Gravier/Argile/Sable" />
+      <Gravel Name="Gravier" />
+      <Clay Name="Argile" />
+      <Sand Name="Sable" />
+    </PitchType>
+    <RetractableRoof Name="Toit rétractable" />
+    <IsTrainingGround Name="Fait office de terrain d'entrainement" />
+    <PitchDeteriorationRate Name="Vitesse de détérioration du terrain">
+      <Slow Name="Lente" />
+      <Medium Name="Moyen" />
+      <Fast Name="Rapide" />
+    </PitchDeteriorationRate>
+    <PitchRecoveryRate Name="Vitesse de rétablissement du terrain" />
+    <DatePitchLastRelaid Name="Date du dernier remplacement de la pelouse" />
+    <PitchRelayRequiredDate Name="Date du prochain remplacement de la pelouse" />
+    <Latitude Name="Latitude" />
+    <Longitude Name="Longitude" />
+    <Decay Name="Détérioration" />
+    <State Name="Etat">
+      <VeryGood Name="Très bon" />
+      <Good Name="Bon" />
+      <Average Name="Moyenne" />
+      <Poor Name="Pauvre" />
+      <VeryPoor Name="Très pauvre" />
+    </State>
+    <UsedByNationalTeam Name="Utilisé par l'équipe nationale" />
+    <UsedByNationalU21Team Name="Utilisé par l'équipe nationale (U21)" />
+    <Extinct Name="Disparu" />
+    <NearbyStadium Name="Stade à proximité" />
+    <StadiumMatches>
+      <NoMatches Name="Pas de match" />
+      <AllMatches Name="Tout les matchs" />
+      <MajorMatches Name="Match important" />
+      <MediumMatches Name="Match normal" />
+      <MinorMatches Name="Match peu important" />
+    </StadiumMatches>
+  </Stadium>
+
+  <!-- Attributes used by filter...-->
+  <Attributes>
+    <LocalRegion Name="Région">
+      <Name Name="Nom"/>
+      <ID Name="ID"/>
+      <Population Name="Population"/>
+      <Common>
+        <ChangeLocalRegion Name="Changer la Région"/>
+        <SearchLocalRegionMessage Name="Tapez le nom de la Région à rechercher"/>
+      </Common>
+    </LocalRegion>
+    <Injury Name="Blessure">
+      <Common>
+        <ChangeInjury Name="Changer la blessure"/>
+        <SearchInjuryMessage Name="Tapez le nom de la blessure à rechercher"/>
+      </Common>
+      <ID Name="ID"/>
+      <Name Name="Nom"/>
+      <MinimumDays Name="Jours minimum"/>
+      <ExtraDays Name="Jours supplémentaires"/>
+      <InactiveRatio Name="Ratio inactif"/>
+      <Category Name="Catégorie">
+        <Any Name="N'importe laquelle"/>
+        <Internal Name="Interne"/>
+        <Foot Name="Pied"/>
+        <Shin Name="Tibia"/>
+        <Knee Name="Genou"/>
+        <Thigh Name="Cuisse"/>
+        <Groin Name="Aine"/>
+        <UpperBody Name="Haut du corps"/>
+        <Hand Name="Main"/>
+        <Arm Name="Bras"/>
+        <Shoulder Name="Épaule"/>
+        <Neck Name="Cou"/>
+        <Head Name="Tête"/>
+        <Rehabilitation Name="Réhabilitation"/>
+      </Category>
+      <MatchInjuryPercentage Name="Pourcentage de blessures par match"/>
+      <Cause Name="Raison">
+        <Invalid Name="Invalide"/>
+        <ImpactWithPlayer Name="Impact sur le joueur"/>
+        <FallImpact Name="Impact sur la valeur"/>
+        <LiftingWeights Name="Soulever des poids"/>
+        <TurningSharply Name="Tourner brusquement"/>
+        <Sprinting Name="Sprinter"/>
+        <Jumping Name="Sauter"/>
+        <WearAndTear Name="Usure"/>
+        <KickingBall Name="Coup de pied dans la balle"/>
+        <CatchingBall Name="Attraper le ballon"/>
+      </Cause>
+      <AgeRule Name="Règle de l'age">
+        <Any Name="N'importe laquelle"/>
+        <Over28 Name="Au-dessus de 28 ans"/>
+      </AgeRule>
+      <InjurySeason Name="Saison">
+        <Any Name="N'importe laquelle"/>
+        <Summer Name="Été"/>
+        <Winter Name="Hiver"/>
+      </InjurySeason>
+      <Contagious Name="Contagieux"/>
+      <Seriousness Name="Gravité">
+        <Invalid Name="Invalidité"/>
+        <PotentiallyCareerThreatening Name="Menace sur le potentiel de la carrière"/>
+        <SeriousInjury Name="Blessure sérieuse"/>
+        <ModerateInjury Name="Blessure modérée"/>
+        <MinorInjury Name="Blessure mineure"/>
+        <WalkingWounded Name="Blessure en marchant"/>
+      </Seriousness>
+      <OccurrenceRatio Name="Proportion des circonstances"/>
+      <Recurring Name="Période"/>
+      <GoalKeeperPercentage Name="Pourcentage des gardiens"/>
+      <CentralDefenderPercentage Name="Pourcentage des défenseurs centrals"/>
+      <Treatment Name="Traitement">
+        <ByPhysio Name="Par physiothérapie"/>
+        <BySpecialist Name="Par un spécialiste"/>
+        <ByInjection Name="Par injection"/>
+        <ByIsolation Name="Par isolation"/>
+      </Treatment>
+      <SaveMessage Name="Les informations des blessures ont bien été sauvegardées"/>
+    </Injury>
+    <Formations Name="Formations">
+      <PreferredFormation Name="Formation préférée"/>
+      <SecondPreferredFormation Name="Deuxième formation préférée"/>
+      <DefensiveFormation Name="Formation défensive"/>
+      <AttackingFormation Name="Formation offensive"/>
+      <Formation0 Name="Non défini"/>
+      <Formation1 Name="5-3-2 Libéro"/>
+      <Formation2 Name="5-3-2"/>
+      <Formation3 Name="4-4-2"/>
+      <Formation4 Name="4-3-3"/>
+      <Formation5 Name="4-2-4"/>
+      <Formation6 Name="3-5-2"/>
+      <Formation7 Name="4-1-2-1-2"/>
+      <Formation8 Name="4-5-1"/>
+      <Formation9 Name="3-4-3"/>
+      <Formation10 Name="3-4-1-2"/>
+      <Formation11 Name="3-4-2-1"/>
+      <Formation12 Name="4-3-2-1"/>
+      <Formation13 Name="3-5-2 Libéro"/>
+      <Formation14 Name="4-3-1-2"/>
+      <Formation15 Name="5-4-1"/>
+      <Formation16 Name="4-4-1-1"/>
+      <Formation17 Name="4-4-2 Libéro"/>
+      <Formation18 Name="4-2-3-1"/>
+      <Formation19 Name="4-1-3-1-1"/>
+      <Formation20 Name="4-1-3-2"/>
+      <Formation21 Name="4-2-3-1 Danemark"/>
+      <Formation22 Name="4-4-2 Milieu défensif"/>
+      <Formation23 Name="4-5-1 Milieu défensif"/>
+      <Formation24 Name="4-2-2-2"/>
+      <Formation25 Name="4-4-2 Diamant"/>
+      <Formation26 Name="3-1-3-1-2"/>
+      <Formation27 Name="4-1-2-3 Attaque"/>
+      <Formation28 Name="4-1-2-2-1"/>
+      <Formation29 Name="4-2-2-2 Milieu défensif"/>
+      <Formation30 Name="4-2-3-1 Milieu défensif"/>
+      <Formation31 Name="5-3-2 Serbie/Monténégro"/>
+      <Formation32 Name="3-6-1"/>
+      <!-- New FM12 -->
+      <Formation33 Name="4-1-4-1"/>
+      <Formation34 Name="4-2-2-1-1"/>
+      <Formation35 Name="3-4-1 (2 milieux défensifs)"/>
+    </Formations>
+    <Tendencies Name="Tendances">
+      <Type Name="Type"/>
+      <Level Name="Niveau"/>
+      <Tendency1 Name="Fera signer des joueurs basés localement."/>
+      <Tendency2 Name="Investira beaucoup dans les jeunes joueurs."/>
+      <Tendency3 Name="Fera signer beaucoup de jeunes joueurs."/>
+      <Tendency4 Name="Fera signer des jeunes joueurs pour l'équipe première."/>
+      <Tendency5 Name="Utilise le budget pour un seul joueur."/>
+      <Tendency6 Name="Aura une équipe globalement composée de séniors."/>
+      <Tendency15 Name="Utilisera les jeunes lors d'un match en coupe."/>
+      <Tendency16 Name="N'aura pas un gardien remplaçant."/>
+      <Tendency17 Name="Fera des changements tactiques tôt dans un match."/>
+      <Tendency18 Name="Utilisera le marquage de zone."/>
+      <Tendency19 Name="Fera jouer des joueurs en forme pour sa tactique préférée."/>
+      <Tendency20 Name="Ciblera les joueurs."/>
+      <Tendency21 Name="Utilisera la contre-attaque."/>
+      <SaveMessage Name="La(Les) Formation(s)/Tendence(s) ont bien été sauvegardées."/>
+    </Tendencies>
+    <Weather Name="Météo">
+      <ID Name="ID"/>
+      <Name Name="Nom"/>
+      <Seasons Name="Saison">
+        <Spring Name="Printemps"/>
+        <Summer Name="Été"/>
+        <Autumn Name="Automne"/>
+        <Winter Name="Hiver"/>
+      </Seasons>
+      <Season Name="Saison">
+        <StartDay Name="Jour de commencement"/>
+        <Wind Name="Vent">
+          <Calm Name="Calme"/>
+          <Breezy Name="Brise"/>
+          <Gusty Name="Rafale"/>
+          <Strong Name="Fort"/>
+          <Gale Name="Grand vent"/>
+        </Wind>
+        <Precipitation Name="Précipitations">
+          <Dry Name="Sec"/>
+          <Wet Name="Mouillé"/>
+          <Drizzle Name="Bruine"/>
+          <Shower Name="Averse"/>
+          <DownPour Name="Déluge"/>
+        </Precipitation>
+        <Temperature Name="Température">
+          <Freezing Name="Glacial"/>
+          <Cold Name="Froid"/>
+          <Mild Name="Doux"/>
+          <Fine Name="Bon"/>
+          <Warm Name="Chaudement"/>
+          <Hot Name="Chaud"/>
+          <VeryHot Name="Très chaud"/>
+        </Temperature>
+      </Season>
+      <Common>
+        <ChangeWeather Name="Changer le temps"/>
+        <SearchWeatherMessage Name="Tapez le nom de la météo à rechercher"/>
+      </Common>
+      <SaveMessage Name="Les informations de la météo ont bien été sauvegardées"/>
+    </Weather>
+    <Player Name="Joueur">
+      <Information Name="Inf">
+        <Tooltips>
+          <Banned Name="Le joueur est suspendu"/>
+          <Injured Name="Le joueur est blessé"/>
+          <Wanted Name="Le joueur est surveillé par d'autres clubs"/>
+          <Retiring Name="Le joueur va prendre sa retraite"/>
+          <ListedForTransfer Name="Le joueur est sur la liste des transferts"/>
+          <ListedForLoan Name="Le joueur est sur la liste des prêts"/>
+          <Transfering Name="Le joueur va être transféré"/>
+          <Unhappy Name="Le joueur est mécontent"/>
+        </Tooltips>
+        <Banned Name="Sus"/>
+        <Injured Name="Ble"/>
+        <Wanted Name="Sur"/>
+        <Retiring Name="Ret"/>
+        <ListedForTransfer Name="Lst"/>
+        <ListedForLoan Name="Prt"/>
+        <Transfering Name="Trn"/>
+        <Unhappy Name="Méc"/>
+      </Information>
+      <Nationalities Name="Nationalités"/>
+      <NumberOfInterestedClubs Name="Nombre de clubs intéressés"/>
+      <InterestedClubsString Name="Clubs intéressés"/>
+      <IsRegen Name="Regen"/>
+      <InternationalRetirement Name="Retraité football int."/>
+      <DeclaredForNation Name="A choisi sa nation"/>
+      <UID Name="ID"/>
+      <ID Name="ID"/>
+      <CityOfBirth Name="Ville de naissance"/>
+      <DisplayedName Name="Nom"/>
+      <FirstName Name="Prénom"/>
+      <LastName Name="Nom"/>
+      <CommonName Name="Surnom"/>
+      <IsInjured Name="Blessé"/>
+      <IsBanned Name="Suspendu"/>
+      <CA Name="Niveau actuel"/>
+      <PA Name="Potentiel possible"/>
+      <Value Name="Valeur"/>
+      <AskValue Name="Valeur demandée"/>
+      <Born Name="Date de naissance"/>
+      <Age Name="Age"/>
+      <MatchSharpness Name="Forme"/>
+      <Condition Name="Condition"/>
+      <Jadedness Name="Fatigue"/>
+      <IntCaps Name="Sel int."/>
+      <IntGoals Name="But(s) int."/>
+      <U21Caps Name="Sel esp."/>
+      <U21Goals Name="But(s) esp."/>
+      <Height Name="Taille"/>
+      <Weight Name="Poids"/>
+      <Morale Name="Moral"/>
+      <SearchableNames Name="Tous les noms"/>
+      <WorldReputation Name="Réputation mondiale"/>
+      <CurrentReputation Name="Réputation actuelle"/>
+      <HomeReputation Name="Réputation nationale"/>
+      <HasContract Name="A un contrat"/>
+      <HasLoanContract Name="A un contrat de prêt"/>
+      <PreferedMoves Name="Mouvement(s) préféré(s)">
+        <PPM1 Name="Court avec le ballon sur le flanc gauche"/>
+        <PPM2 Name="Court avec le ballon sur le flanc droit"/>
+        <PPM3 Name="Court avec le ballon au centre"/>
+        <PPM4 Name="Va dans la surface adverse"/>
+        <PPM5 Name="Va sur les côtés"/>
+        <PPM6 Name="Va vers l'avant dès que possible"/>
+        <PPM7 Name="Joue court et simple"/>
+        <PPM8 Name="Tente souvent des ouvertures"/>
+        <PPM9 Name="Tirs de loin"/>
+        <PPM10 Name="Tire avec puissance"/>
+        <PPM11 Name="Place ses frappes"/>
+        <PPM12 Name="Brosse le ballon"/>
+        <PPM13 Name="Aime crocheter le gardien"/>
+        <PPM14 Name="Aime jouer à la limite du hors jeu"/>
+        <PPM15 Name="Utilise l'extérieur du pied"/>
+        <PPM16 Name="Marque de près son adversaire"/>
+        <PPM17 Name="Déborde son adversaire"/>
+        <PPM18 Name="Discute avec les arbitres"/>
+        <PPM19 Name="Joue dos au but"/>
+        <PPM20 Name="Décroche pour récupérer le ballon"/>
+        <PPM21 Name="Joue les une-deux"/>
+        <PPM22 Name="Aime lober le gardien"/>
+        <PPM23 Name="Dicte son rythme"/>
+        <PPM24 Name="Tente des retournés"/>
+        <PPM25 Name="Cherche à faire une passe plutôt que de marquer"/>
+        <PPM26 Name="Ne joue pas en profondeur"/>
+        <PPM27 Name="Ralentit le jeu"/>
+        <PPM28 Name="Déborde son adversaire"/>
+        <PPM29 Name="Met le ballon sur son pied droit pour dribbler"/>
+        <PPM30 Name="Met le ballon sur son pied gauche pour dribbler"/>
+        <PPM31 Name="Réclame souvent le ballon"/>
+        <PPM32 Name="Arrive tard dans la surface adverse"/>
+        <PPM33 Name="Tente d'écarter d'abord le danger"/>
+        <PPM34 Name="Reste en permanence à l'arrière"/>
+        <PPM35 Name="Évite de jouer sur son pied faible"/>
+        <PPM36 Name="Tente des gri-gris"/>
+        <PPM37 Name="Tente les coups francs de loin"/>
+        <PPM38 Name="Se jette pour tacler"/>
+        <PPM39 Name="Ne se jette pas quand il tacle"/>
+        <PPM40 Name="Revient vers l'intérieur"/>
+        <PPM41 Name="Joue près de la ligne de touche"/>
+        <PPM42 Name="Joue avec le public"/>
+        <PPM43 Name="Tente des tirs instantanés"/>
+        <PPM44 Name="Tente des passes de loin"/>
+        <PPM45 Name="Aime recevoir le ballon dans les pieds"/>
+        <PPM46 Name="Joue les coup-francs avec puissance"/>
+        <PPM47 Name="Aime les duels d'homme à homme"/>
+        <PPM48 Name="Apprécie les changements d'aile"/>
+        <PPM51 Name="Peut effectuer de longues touches"/>
+        <PPM52 Name="Beaucoup de courses balle au pied"/>
+        <PPM53 Name="Peu de courses balle au pied"/>
+        <SaveMessage Name="Le(s) mouvement(s) préféré(s) du joueur a/ont été sauvegardées"/>
+      </PreferedMoves>
+      <SquadNumber Name="Numéro" />
+      <Number Name="Numéro" />
+      <NewPositionsTraining Name="Nouvelle position (entrainement)" />
+    </Player>
+    <PlayerRating Name="Note">
+      <ActualRating Name="Note actuelle"/>
+      <PotentialRating Name="Note potentielle"/>
+      <ActualBestPos Name="Meilleur position actuelle"/>
+      <PotentialBestPos Name="Meilleur position potentielle"/>
+      <Weight Name="Poids"/>
+      <AgePeak Name="Age de maturité"/>
+      <Settings Name="Note"/>
+      <Overview Name="Système de note"/>
+      <DialogFileType Name="FMRTE - Fichier des notes"/>
+      <SaveMessage Name="Les notes ont bien été sauvegardées"/>
+    </PlayerRating>
+    <Contract Name="Contrat">
+      <NumberOfCurrentUnhappinessMotives Name="Nombre de motifs de mécontentement"/>
+      <MonthsLeft Name="Mois restants (Contrat)"/>
+      <Bonus Name="Bonus">
+        <NewBonus Name="Nouveau bonus"/>
+        <AppearanceBonus Name="Prime d'apparition"/>
+        <GoalBonus Name="Prime de but"/>
+        <CleanSheetBonus Name="Prime de but inviolé"/>
+        <TeamOfYearBonus Name="Prime équipe de l'année (Division)"/>
+        <AvoidRelegation Name="Prime de remplaçant non utilisé" />
+        <TopGoalscorerBonusDivision Name="Prime de meilleur buteur (Division)" />
+      </Bonus>
+      <Club Name="Club"/>
+      <ContractExpiryDate Name="Date d'expiration"/>
+      <ContractStarted Name="Date de commencement"/>
+      <WagePerWeek Name="Salaire"/>
+      <ContractType Name="Type"/>
+      <TeamStatus Name="Stats dans l'équipe">
+        <Indispensable Name="Indispensable au club"/>
+        <FirstTeam Name="Joueur important de l'équipre première"/>
+        <SquadRotation Name="Utilisé dans la rotation de l'effectif"/>
+        <Backup Name="Solution de remplacement en équipe première"/>
+        <HotProspect Name="Grand espoir pour l'avenir"/>
+        <DecentYoung Name="Jeune joueur correct"/>
+        <NotNeeded Name="Superflu"/>
+      </TeamStatus>
+      <Unhappiness Name="Malheureux">
+        <Motive Name="Motivation"/>
+        <StartDate Name="Date de départ"/>
+        <EndDate Name="Date de fin"/>
+        <Type Name="Type">
+          <SlightConcerned Name="SlightConcerned"/>
+          <Concerned Name="Concernés"/>
+          <Internal Name="Interne"/>
+          <Public Name="Public"/>
+          <Alienated Name="Aliéné"/>
+        </Type>
+        <!-- New Motives FM 13 -->
+        <Motive529 Name="Veut jouer en équipe première" />
+        <Motive510 Name="Pense que le club n'est pas assez performant" />
+        <Motive531 Name="Veut un nouveau défi" />
+        <Motive514 Name="A des problèmes d'acclimataton dans le pays" />
+        <Motive526 Name="Veut être prêté" />
+        <!-- New Motives -->
+        <Motive527 Name="Veut améliorer son contrat"/>
+        <Motive528 Name="Veut partir pour un plus grand club"/>
+        <Motive525 Name="Mécontent d'avoir été placé en équipe réserve"/>
+        <Motive532 Name="Refuse d'être placé sur liste des transferts"/>
+        <Motive622 Name="Wants to return to his country"/>
+        <!-- Motive20 (FM 2010)  -->
+        <Motive534 Name="Ne veut pas quitter le club"/>
+        <!-- Motive49 (FM 2010)  -->
+        <Motive512 Name="Mécontent du discours de l'entraineur"/>
+        <!-- To be updated for FM 2011 -->
+        <!--Major Concerns -->
+        <Motive1 Name="Veut partir pour un plus grand club"/>
+        <Motive2 Name="Veut un meilleur contrat"/>
+        <Motive3 Name="Surpris que vous ne le considérez pas comme un titulaire régulier"/>
+        <Motive4 Name="Mécontent de l'amende infligée"/>
+        <Motive5 Name="N'est pas convaincu qu'il restera dans vos plans"/>
+        <Motive9 Name="Veut un nouveau défi"/>
+        <Motive14 Name="Ne vous aime pas et trouve difficile de travailler avec vous"/>
+        <Motive17 Name="Veut être placé sur la liste des transferts"/>
+        <Motive27 Name="Estime que son salaire devrait être comparable aux plus hauts du club"/>
+        <Motive33 Name="Pense que l'entraineur considère peut-être de le remplacer"/>
+        <Motive34 Name="Inquiété par les rumeurs selon lesquelles le club lui cherche un remplaçant"/>
+        <Motive35 Name="Estime qu'il y a trop de concurrence pour une place en équipe première"/>
+        <Motive37 Name="Convaincu que le club a besoin d'un effectif plus étoffé"/>
+        <Motive38 Name="Convaincu que le club ne pourra jamais progresser en vendant ses meilleurs joueurs"/>
+        <Motive39 Name="Inconnu"/>
+        <Motive63 Name="Mécontent d'avoir entendu qu'il ne jouerait plus dans l'équipe première du club"/>
+        <!--Slight Concerns -->
+        <Motive6 Name="Pense qu'il est temps de partir"/>
+        <Motive7 Name="A des problèmes personnels"/>
+        <Motive8 Name="Mécontent de ne pas pouvoir changer de club"/>
+        <Motive10 Name="Estime qu'il a été traité injustement"/>
+        <Motive11 Name="Mécontent du traitement infligé à son coéquipier"/>
+        <Motive12 Name="Faché avec X (X=Un joueur)"/>
+        <Motive13 Name="Fâché avec l'entraineur-adjoint du club"/>
+        <Motive15 Name="Estime qu'il mérite un rôle plus important dans l'équipe"/>
+        <Motive16 Name="Estime que son régime d'entraînement nuit à son développement"/>
+        <Motive18 Name="Commence à avoir le mal du pays"/>
+        <Motive19 Name="Mécontent qu'on lui ait demandé de jouer sous infiltration, ce qu'il estime potentiellement néfaste pour la suite de sa carrière"/>
+        <Motive21 Name="Estime qu'il a besoin de repos"/>
+        <Motive22 Name="Mécontent d'avoir perdu le brassard"/>
+        <Motive23 Name="Mécontent d'avoir été remplacé"/>
+        <Motive24 Name="Préoccupé par la stabilité financière du club"/>
+        <Motive25 Name="Pense que la valeur fixée sur son nom par le club est peut-être irréaliste"/>
+        <Motive26 Name="Estimes que les arbitres du championnat (du pays) le détestent"/>
+        <Motive28 Name="Estime que vous faites obstacle à son départ du club"/>
+        <Motive29 Name="Inquiet du manque de discipline de l'entraîneur"/>
+        <Motive30 Name="Préfère garder ses options ouvertes mais n'exclus pas un départ en vert de l'arrêt Bosman"/>
+        <Motive31 Name="Pense que le club pourrait peut-être faire mieux"/>
+        <Motive32 Name="Envisage de quitter le club par application de l'arrêt Bosman"/>
+        <Motive36 Name="Pense que vous n'écoutez pas vos joueurs"/>
+        <Motive40 Name="Perturbé par les rumeurs concernant son possible transfert"/>
+        <Motive41 Name="Ne s'est pas adapter à la région comme il le voulait"/>
+        <Motive42 Name="Trouve que vous ne reconnaissez pas assez les mérites de l'équipe"/>
+        <Motive43 Name="Estime que vous avez été trop dur avec l'équipe récemment"/>
+        <Motive44 Name="Pense que vous jetez la confusion chez les joueurs avec vos interventions dans le vestiaire"/>
+        <Motive45 Name="Estime que vous mettez trop de pression sur les joueurs"/>
+        <Motive46 Name="Trouve que certains joueurs au club sont plus mis à l'honneur que d'autres"/>
+        <Motive47 Name="Est mécontent de la manière dont vous vous adressez aux joueurs dans le vestiaire"/>
+        <Motive48 Name="Pense que son entraîneur ne motive pas assez ses joueurs dans le vestiaire"/>
+
+        <Motive50 Name="A perdu confiance en les aptitudes de son entraîneur"/>
+        <Motive51 Name="Craint que le club soit peut-être dans l'obligation de vendre ses meilleurs joueurs"/>
+        <Motive52 Name="Est mécontent que vous l'ayez écarté de l'équipe nationale"/>
+        <Motive53 Name="Inconnu"/>
+        <Motive54 Name="Ne veut pas qu'on le force à quitter le club"/>
+        <Motive55 Name="Estime que l'entraineur ne le considère pas comme un joueur"/>
+        <Motive56 Name="Veut des clarifications sur sa place au club"/>
+        <Motive57 Name="Commence à se dire qu'il lui reste peu de temps à jouer à ce niveau"/>
+        <Motive58 Name="Trouve l'attente qu'il semble susciter difficile à supporter"/>
+        <Motive59 Name="Estime que les médias l'ont beaucoup critiqué"/>
+        <Motive60 Name="Estime que l'entraîneur n'apprécie pas son apport à l'équipe"/>
+        <Motive61 Name="Ne se laissera pas forcer par les administrateurs à quitter le club"/>
+        <Motive62 Name="Veut jouer au poste de X (X=Son poste préféré)"/>
+        <Motive64 Name="Ne veut pas qu'on le force à quitter le club / Inquiet de la volonté du club d'étudier toute offre le concernant"/>
+      </Unhappiness>
+      <TransferStatus Name="Statut Transfert/Prêt">
+        <None Name="Inconnu"/>
+        <Listed Name="Sur la liste"/>
+        <ByRequest Name="Liste des transferts (demande du joueur)"/>
+        <NotForSell Name="Pas disponible (transfert)"/>
+        <NotForLoan Name="Pas disponible (prêt)"/>
+      </TransferStatus>
+      <AgreedPrice Name="Accord sur le prix"/>
+      <SquadNumber Name="Numéro"/>
+      <LoanMonthlyFee Name="Frais mensuel" />
+    </Contract>
+    <LoanContract Name="Contrat de prêt">
+      <AppearanceBonus Name="Bonus d'apparition"/>
+      <Club Name="Club"/>
+      <ContractExpiryDate Name="Date d'expiration"/>
+      <ContractStarted Name="Date de commencement"/>
+      <GoalBonus Name="Bonus de but"/>
+      <WagePerWeek Name="Salaire"/>
+      <ContractType Name="Type"/>
+      <AgreedPrice Name="Accord sur le prix"/>
+      <LoanMonthlyFee Name="Frais mensuel" />
+    </LoanContract>
+    <Nation Name="Nation">
+      <Overview Name="Informations"/>
+      <ID Name="Nation ID"/>
+      <Name Name="Nation"/>
+      <Reputation Name="Réputation"/>
+      <Capital Name="Capitale"/>
+      <Continent Name="Continent"/>
+      <Importance Name="Importance">
+        <VeryImportant Name="Très important"/>
+        <Important Name="Important"/>
+        <Unimportant Name="Peu important"/>
+        <Useless Name="Inutile"/>
+      </Importance>
+      <Development Name="Developpement">
+        <Developed Name="Développée"/>
+        <Developing Name="En développement"/>
+        <ThirdWorld Name="Tiers-Monde"/>
+      </Development>
+      <Economy Name="Économie"/>
+      <EuroMember Name="Membre de l'UE"/>
+      <YearsToGainNationality Name="Année pour obtenir la nationalité"/>
+      <!-- New on FM16-->
+      <GainNationalityType Name="Type d'obtention de nationalité">
+        <Continuous Name="Continu"/>
+        <Accumulative Name="Cumulatif"/>
+      </GainNationalityType>
+      <FIFAPosition Name="Classement FIFA"/>
+      <FIFAScore Name="Score FIFA"/>
+      <LeagueImportancy Name="Importance du championnat"/>
+      <NationsTreatedAsUE Name="Nations considérées comme UE">
+        <Type Name="Type">
+          <Nation Name="Nation"/>
+          <Agreement Name="Accord"/>
+        </Type>
+      </NationsTreatedAsUE>
+      <Agreements Name="Accords"/>
+      <EuroCoefficients Name="Coeff. UEFA" Season="Saison"/>
+      <YearAffiliatedFIFA Name="Année d'affiliation à la FIFA"/>
+      <YearAffiliatedToFederation Name="Année d'affiliation à la Fédération"/>
+      <YearAssociationFormed Name="Année de fondation"/>
+      <FaPatience Name="Patience Fédération"/>
+      <ForgeinManagerLikelihood Name="Probabilité d'un sélectionneur étranger"/>
+      <FaFinancialPower Name="Pouvoir financier de la Fédération"/>
+      <YouthRating Name="Notation des jeunes"/>
+      <SaveMessage Name="Les informations du pays ont été sauvegardées"/>
+      <!-- NEW FM 13 -->
+      <TaxRules Name="Système fiscal">
+        <LowerAmount Name="Montant inférieur" />
+        <UpperAmount Name="Montant supérieur" />
+        <CappedAmount Name="Somme plafonnée" />
+        <TaxType Name="Type">
+          <IncomeTax Name="Impôt sur le revenu" />
+          <EmployerTax Name="Cotisations sociales" />
+          <CorporationTax Name="Impôt sur les sociétés" />
+          <VAT Name="TVA" />
+          <NationalInsuranceEmployee Name="Cotisations sociales (employé)" />
+          <NationalInsuranceEmployer Name="Cotisations sociales (employeur)" />
+          <PensionEmployee Name="Retraite (employé)" />
+          <PensionEmployer Name="Retraire (employeur)" />
+          <TaxOnTransfers Name="Impôt sur les transferts" />
+        </TaxType>
+        <TaxPersonType Name="Type de personne">
+          <All Name="Toutes" />
+          <Foreigners Name="Etrangers" />
+          <Players Name="Joueurs" />
+          <NonPlayers Name="Non joueurs" />
+          <OtherStaff Name="Autre staff" />
+        </TaxPersonType>
+        <Percentage Name="Pourcentage (%)" />
+        <Year Name="Année" />
+        <TimeFrame Name="Période (années)" />
+        <DivisionLevel Name="Niveau division" />
+        <SaveMessage Name="Le système fiscal de la nation a bien été sauvegardé" />
+      </TaxRules>
+    </Nation>
+    <GoalKeeperAttributes Name="Caract. de gardien">
+      <AerialAbility Name="Sorties aériennes"/>
+      <CommandOfArea Name="Autorité"/>
+      <Communication Name="Diriger sa défense"/>
+      <Eccentricity Name="Excentricité"/>
+      <Handling Name="Prise de balle"/>
+      <Kicking Name="Dégagements"/>
+      <OneOnOnes Name="Un contre un"/>
+      <Reflexes Name="Réflexes"/>
+      <RushingOut Name="Sorties dans les pieds"/>
+      <TendencyToPunch Name="Dégagement du poing"/>
+      <Throwing Name="Relance à la main"/>
+    </GoalKeeperAttributes>
+    <MentalAttributes Name="Caract. mentales">
+      <Aggression Name="Agressivité"/>
+      <Anticipation Name="Anticipation"/>
+      <Bravery Name="Courage"/>
+      <Composure Name="Sang-froid"/>
+      <Concentration Name="Concentration"/>
+      <Vision Name="Créativité"/>
+      <Decisions Name="Décisions"/>
+      <Determination Name="Détermination"/>
+      <Flair Name="Style"/>
+      <Leadership Name="Leadership"/>
+      <OffTheBall Name="Appels de balle"/>
+      <Positioning Name="Placement"/>
+      <Teamwork Name="Collectif"/>
+      <Workrate Name="Activité"/>
+    </MentalAttributes>
+    <PhysicalAttributes Name="Caract. physiques">
+      <Acceleration Name="Accélération"/>
+      <Agility Name="Agilité"/>
+      <Balance Name="Equilibre"/>
+      <Jumping Name="Saut"/>
+      <LeftFoot Name="Pied gauche"/>
+      <NaturalFitness Name="Qualités phys. nat."/>
+      <Pace Name="Vitesse"/>
+      <RightFoot Name="Pied droit"/>
+      <Stamina Name="Endurance"/>
+      <Strength Name="Force"/>
+    </PhysicalAttributes>
+    <HiddenAttributes Name="Caract. cachées">
+      <Consistency Name="Régularité"/>
+      <Dirtiness Name="Violence"/>
+      <ImportantMatches Name="Matchs importants"/>
+      <InjuryProness Name="Prédisp. aux blessures"/>
+      <Versatility Name="Polyvalence"/>
+    </HiddenAttributes>
+    <TechnicalAttributes Name="Caract. techniques">
+      <Corners Name="Corners"/>
+      <Crossing Name="Centres"/>
+      <Dribbling Name="Dribble"/>
+      <Finishing Name="Finition"/>
+      <FirstTouch Name="Contrôle de balle"/>
+      <Freekicks Name="Coup-francs"/>
+      <Heading Name="Tête"/>
+      <LongShots Name="Tirs de loin"/>
+      <Longthrows Name="Touches longues"/>
+      <Marking Name="Marquage"/>
+      <Passing Name="Passes"/>
+      <PenaltyTaking Name="Penalty"/>
+      <Tackling Name="Tacles"/>
+      <Technique Name="Technique"/>
+    </TechnicalAttributes>
+    <PersonalityAttributes Name="Personnalité">
+      <Adaptability Name="Adaptation"/>
+      <Ambition Name="Ambition"/>
+      <Loyalty Name="Loyauté"/>
+      <Pressure Name="Pression"/>
+      <Professional Name="Professionnel"/>
+      <Sportsmanship Name="Sportivité"/>
+      <Temperament Name="Tempérament"/>
+      <Controversy Name="Controverse"/>
+    </PersonalityAttributes>
+    <Positions Name="Positions">
+      <FreeRole Name="Rôle libre"/>
+      <Striker Name="Attaquant" Small="BT"/>
+      <AttackingMidfielder Name="Milieu offensif" Small="MO"/>
+      <Midfielder Name="Milieu" Small="M"/>
+      <DefensiveMidfielder Name="Milieu défensif" Small="MD"/>
+      <Defender Name="Défenseur" Small="D"/>
+      <Sweeper Name="Libéro" Small="LIB"/>
+      <WingBack Name="Arrière latéral" Small="AL"/>
+      <Goalkeeper Name="Gardien" Small="GB"/>
+      <Left Name="Gauche" Small="G"/>
+      <Centre Name="Centre" Small="C"/>
+      <Right Name="Droit" Small="D"/>
+      <PositionsDesc Name="Positions"/>
+      <Striker Name="Attaquant"/>
+      <AttackingMidCentral Name="Milieu offensif centre"/>
+      <AttackingMidLeft Name="Milieu offensif gauche"/>
+      <AttackingMidRight Name="Milieu offensif droit"/>
+      <DefenderCentral Name="Defenseur central"/>
+      <DefenderLeft Name="Défenseur gauche"/>
+      <DefenderRight Name="Défenseur droit"/>
+      <MidfielderCentral Name="Milieu centre"/>
+      <MidfielderLeft Name="Milieu gauche"/>
+      <MidfielderRight Name="Milieu droit"/>
+      <WingBackLeft Name="Arrière latéral gauche"/>
+      <WingBackRight Name="Arrière latéral droit"/>
+    </Positions>
+    <NewPositions Name="Positions détaillées">
+      <Striker Name="Attaquant"/>
+      <AttackingMidCentral Name="Milieu offensif centre"/>
+      <AttackingMidLeft Name="Milieu offensif gauche"/>
+      <AttackingMidRight Name="Milieu offensif droit"/>
+      <DefenderCentral Name="Defenseur central"/>
+      <DefenderLeft Name="Défenseur gauche"/>
+      <DefenderRight Name="Défenseur droit"/>
+      <DefensiveMidfielderCentral Name="Milieu défensif"/>
+      <MidfielderCentral Name="Milieu centre"/>
+      <MidfielderLeft Name="Milieu gauche"/>
+      <MidfielderRight Name="Milieu droit"/>
+      <WingBackLeft Name="Arrière latéral gauche"/>
+      <WingBackRight Name="Arrière latéral droit"/>
+    </NewPositions>
+    <!-- Club zone-->
+    <Club>
+      <Name Name="Nom"/>
+      <ShortName Name="Nom court"/>
+      <NumberOfAffiliatedClubs Name="Nombre de clubs affiliés"/>
+      <MaxAffiliatedClubNumber Name="Nombre maximum de clubs affiliés possibles"/>
+    </Club>
+    <!-- (: Trad by Damn3d|74y75y@gmail.com :) -->
+    <!-- Staff zone-->
+    <Staff>
+      <Formation_And_Tendencies Name="Formations/Tendences"/>
+      <Nationalities Name="Nationalités"/>
+      <IsRegen Name="Regen"/>
+      <Information Name="Information"/>
+      <DisplayedName Name="Nom"/>
+      <FirstName Name="Prénom"/>
+      <LastName Name="Nom"/>
+      <CommonName Name="Surnom"/>
+      <Age Name="Age"/>
+      <Born Name="Date de naissance"/>
+      <CityOfBirth Name="Ville de naissance"/>
+      <CA Name="Niveau actuel"/>
+      <PA Name="Potentiel possible"/>
+      <IntCaps Name="Sel Int."/>
+      <IntGoals Name="But(s) Int."/>
+      <U21Caps Name="Sel Esp."/>
+      <U21Goals Name="But(s) Esp."/>
+      <ID Name="ID"/>
+      <WorldReputation Name="Réputation mondiale"/>
+      <CurrentReputation Name="Réputation actuelle"/>
+      <HomeReputation Name="Réputation nationale"/>
+      <HasContract Name="A un contrat"/>
+      <ContractJob Name="Job"/>
+      <Team Name="Equipe"/>
+      <NationalTeamJob Name="National Job"/>
+      <NationalTeam Name="National Team"/>
+	  <Sex Name="Sex" Male="Male" Female="Female"/>
+    </Staff>
+    <StaffRating Name="Caractéristiques de coaching">
+      <Strength Name="Force"/>
+      <Aerobic Name="Aérobic"/>
+      <Goalkeeping Name="Gardien"/>
+      <Tactics Name="Tactique"/>
+      <BallControl Name="Contrôle de balle"/>
+      <Defending Name="Défense"/>
+      <Attacking Name="Attaque"/>
+      <Shooting Name="Tirs"/>
+      <SetPieces Name="Coups de pieds arr."/>
+    </StaffRating>
+    <ChairmanAttributes Name="Carac. président">
+      <Business Name="Sens des affaires"/>
+      <Interference Name="Implication"/>
+      <Patience Name="Patience"/>
+      <Resources Name="Ressources"/>
+    </ChairmanAttributes>
+    <CoachingAttributes Name="Caract. coaching">
+      <Attacking Name="Offensif"/>
+      <Defending Name="Défensif"/>
+      <Fitness Name="Forme"/>
+      <Goalkeepers Name="Gardiens"/>
+      <Mental Name="Mental"/>
+      <Player Name="Joueur"/>
+      <Tactical Name="Tactique"/>
+      <Technical Name="Technique"/>
+      <ManManagement Name="Gestion des hommes"/>
+      <WorkingWithYoungsters Name="Travail avec jeunes"/>
+    </CoachingAttributes>
+    <StaffMentalAttributes Name="Caract. mentales">
+      <Adaptability Name="Adaptation"/>
+      <Determination Name="Determination"/>
+      <JudgingPlayerAbility Name="Évaluation joueurs"/>
+      <JudgingPlayerPotential Name="Évaluation potentiel"/>
+      <LevelOfDiscipline Name="Niveau de discipline"/>
+      <Motivating Name="Motivation"/>
+      <Physiotherapy Name="Kiné"/>
+      <TacticalKnowledge Name="Notions tactiques"/>
+    </StaffMentalAttributes>
+    <StaffPersonality Name="Personnalité">
+      <Adaptability Name="Adaptation"/>
+      <Ambition Name="Ambition"/>
+      <Controversy Name="Controverse"/>
+      <Determination Name="Détermination"/>
+      <Loyalty Name="Loyauté"/>
+      <Pressure Name="Pression"/>
+      <Professionalism Name="Professionnel"/>
+      <Sportsmanship Name="Sportivité"/>
+      <Temperament Name="Tempérament"/>
+    </StaffPersonality>
+    <NonTacticalAttributes Name="Caract. non tactiques">
+      <BuyingPlayers Name="Achat"/>
+      <HardnessOfTraining Name="Entraîne dur"/>
+      <MindGames Name="Psychologie"/>
+      <SquadRotation Name="Rotation"/>
+    </NonTacticalAttributes>
+    <RolesAttributes Name="Caract. postes">
+      <AssistantManager Name="Entraineur adjoint"/>
+      <Coach Name="Préparateur"/>
+      <FitnessCoach Name="Préparateur physique"/>
+      <GoalkeepingCoach Name="Entraineur des gardiens"/>
+      <Manager Name="Entraineur"/>
+      <Physio Name="Kiné"/>
+      <Scout Name="Recruteur"/>
+      <!-- new FM 13 -->
+      <Chairman Name="Président" />
+      <DirectorOfFootball Name="Directeur de football" />
+      <HeadOfYouthDevelopment Name="Responsable formation jeune" />
+    </RolesAttributes>
+    <TacticalAttributes Name="Caract. tactiques">
+      <Attacking Name="Attaque"/>
+      <Depth Name="Profondeur"/>
+      <Directness Name="Style direct"/>
+      <Flamboyancy Name="Extravagance"/>
+      <Flexibility Name="Flexibilité"/>
+      <FreeRoles Name="Rôle libre"/>
+      <Marking Name="Marquage"/>
+      <OffSide Name="Hors-jeu"/>
+      <Pressing Name="Pressing"/>
+      <SittingBack Name="Attentisme"/>
+      <Tempo Name="Rythme"/>
+      <UseOfPlaymaker Name="Util. d'un meneur"/>
+      <UseOfSubstitutions Name="Util. des remplaçants"/>
+      <Width Name="Utilise largeur"/>
+    </TacticalAttributes>
+    <GamerMentalAttributes Name="Caract. mentales">
+      <HandsOnApproach Name="Investissement"/>
+      <DomesticPlayerBias Name="Joueurs non-étrangers"/>
+      <TacticalConsistency Name="Reconduction tactiques"/>
+      <ClubPlayerLoyalty Name="Loyauté club/joueurs"/>
+      <SquadDiscipline Name="Fermeté"/>
+      <FinancialControl Name="Contrôle des finances"/>
+      <MediaHandling Name="Porte-parole des supporters" />
+    </GamerMentalAttributes>
+    <League Name="Championnat">
+      <Name Name="Nom du championnat"/>
+      <Continent Name="Continent"/>
+      <Nation Name="Nation"/>
+      <Information Name="Information"/>
+      <ID Name="ID"/>
+      <Reputation Name="Réputation"/>
+      <Standings Name="Classement"/>
+      <TeamName Name="Équipe"/>
+      <GamesPlayed Name="J"/>
+      <Wins Name="V"/>
+      <Lost Name="D"/>
+      <Draws Name="N"/>
+      <GoalsScored Name="BP"/>
+      <GoalsAllowed Name="BC"/>
+      <TotalPts Name="Pts"/>
+      <Position Name="Pos"/>
+      <Stage Name="Stage"/>
+      <CompetitionStage Name="Stage de compétition"/>
+      <BackgroundColor Name="Couleur de fond" />
+      <ForegroundColor Name="Couleur de premier plan" />
+      <TrimColor Name="Couleur de remplissage" />
+      <WinterBallColor Name="Couleur du ballon d'hiver" />
+      <WinterBallStartDate Name="Date de début pour le ballon d'hiver" />
+      <WinterBallEndDate Name="Date de fin pour le ballon d'hiver" />
+      <SaveMessage Name="Les informations du championnat ont été sauvegardées"/>
+    </League>
+    <Relations Name="Relations">
+      <Type Name="Type"/>
+      <Player Name="Joueur"/>
+      <Staff Name="Staff"/>
+      <Team Name="Équipe"/>
+      <Nation Name="Nation"/>
+      <Value Name="Valeur"/>
+      <LikesTeam Name="Aime le club"/>
+      <DislikesTeam Name="N'aime pas le club"/>
+      <LikesPerson Name="Aime la personne"/>
+      <DislikesPerson Name="N'aime pas la personne"/>
+      <LikesCountry Name="Formé au pays"/>
+      <FormedAtClub Name="Formé au club"/>
+      <FormedAtCountry Name="Formé au pays"/>
+      <OtherNationality Name="Autre nationalité"/>
+      <Rival Name="Rival"/>
+      <UEFARegistration Name="Enregistrement UEFA"/>
+      <LeagueRegistration Name="Enregistrement Ligue"/>
+      <SquadRegistration Name="Enregistrement Equipe"/>
+      <PlayedUEFAGame Name="A jouer des matchs UEFA"/>
+      <LibertadoresRegistration Name="Enregistrement Copa Libertadores"/>
+      <ClubWorldChampionshipRegistration Name="Enregistrement Championnat du monde des clubs" />
+      <GamesPlayed Name="Match(s) joué(s)"/>
+      <SaveMessage Name="Les relations du joueur ont été sauvegardées"/>
+      <InternationalWithdrawal Name="International Withdrawal"/>
+      <Reason Name="Reason">
+        <NoReason Name="No Reason"/>
+        <Father Name="Father"/>
+        <Brother Name="Brother"/>
+        <Son Name="Son"/>
+        <Relation Name="Relation"/>
+        <Teammate Name="Teammate"/>
+        <Manager Name="Manager"/>
+        <Player Name="Player"/>
+        <BackroomStaff Name="Backroom Staff"/>
+        <Idol Name="Idol"/>
+        <Friend Name="Friend"/>
+        <Supporter Name="Supporter"/>
+        <Local Name="Local"/>
+        <Competitive Name="Competitive"/>
+        <Historic Name="Historic"/>
+      </Reason>
+      <Permanent Name="Permanent"/>
+    </Relations>
+    <City Name="City">
+      <Information Name="Information"/>
+      <Name Name="Nom de la ville"/>
+      <ID Name="ID"/>
+      <Nation Name="Pays"/>
+      <Latitude Name="Latitude"/>
+      <Longitude Name="Longitude"/>
+      <Atraction Name="Attraction"/>
+      <Altitude Name="Altitude"/>
+      <InhabintantsRange Name="Nombre d'habitants">
+        <R0 Name="Non défini"/>
+        <R1 Name="0 - 1000"/>
+        <R2 Name="1001 - 2500"/>
+        <R3 Name="2501 - 5000"/>
+        <R4 Name="5001 - 10000"/>
+        <R5 Name="10001 - 25000"/>
+        <R6 Name="25001 - 50000"/>
+        <R7 Name="50001 - 100000"/>
+        <R8 Name="100001 - 250000"/>
+        <R9 Name="250001 - 500000"/>
+        <R10 Name="500001 - 1000000"/>
+        <R11 Name="1000001 - 2500000"/>
+        <R12 Name="2500001 - 5000000"/>
+        <R13 Name="5000001 - 10000000"/>
+        <R14 Name="10000001 - 20000000"/>
+        <R15 Name="+ de 20000001"/>
+      </InhabintantsRange>
+      <SaveMessage Name="Les informations de la ville ont été sauvegardées"/>
+      <ChangeCity Name="Changer la ville"/>
+      <SearchCityMessage Name="Entrer le nom de la ville que vous cherchez"/>
+    </City>
+    <Clausules Name="Clauses">
+      <Type Name="Type"/>
+      <Value Name="Valeur"/>
+      <Games Name="Match(s)"/>
+      <Goals Name="But(s)"/>
+      <Percentage Name="Pourcentage"/>
+      <WageAfterReachingClubCareerLeagueGames Name="Salaire après match de championnat au club"/>
+      <ReleaseAtAnyTime Name="Clause libératoire permanente"/>
+      <SellOnFeePercentage Name="Pourcentage sur la revente"/>
+      <TopDivisionPromotionWageRise Name="Augmentation de salaire en cas de montée dans l'élite"/>
+      <MinimumFeeRelease_HigherDivisionClubs Name="Montant de la clause libératoire (clubs de division supérieure)"/>
+      <SellOnFeeProfitPercentage Name="Pourcentage sur bénéfice de la revente"/>
+      <MatchHighestEarner Name="Clause pour égaler le plus gros salaire"/>
+      <SeasonalLandmarkGoalBonus Name="Prime de buts inscrits (saisons)"/>
+      <OneYearExtensionAfterLeagueGames_FinalSeason Name="Prolongation auto d'un an après nombre de matchs"/>
+      <TopDivisionRelegationWageDrop Name="Baisse de salaire en cas de relégation de division d'élite"/>
+      <MinimumFeeRelease_ForgeinClubs Name="Montant de la clause libératoire (clubs étrangers)"/>
+      <MinimumFeeRelease Name="Montant de la clause libératoire"/>
+      <NonPromotionRelease Name="Clause de départ hors promotion"/>
+      <RelegationRelease Name="Clause de départ en cas de relégation"/>
+      <PromotionWageRisePercentage Name="Augmentation de salaire en cas de montée"/>
+      <RelegationWageDropPercentage Name="Baisse de salaire en cas de relégation"/>
+      <YearlyWageRisePercentage Name="Augmentation de salaire annuelle"/>
+      <ManagerJobReleaseClausule Name="Clause libératoire en cas d'offre de poste technique"/>
+      <WageAfterReachingIntApps Name="Salaire après sélections (nombre de sélections)" />
+      <WillLeaveAtEndOfContract Name="Quittera le club en fin de contrat" />
+      <IntGames Name="Salaire après sélection" />
+      <OptionalContractExtensionByClub Name="Option de prolongation de contrat par le club"/>
+      <SaveMessage Name="Les clauses de contrat ont été sauvegardées"/>
+    </Clausules>
+
+    <Sponsors Name="Sponsors">
+      <Type Name="Type"/>
+      <Value Name="Valeur"/>
+      <EndDate Name="Fin de contrat"/>
+      <KitSponsorship Name="Sponsor maillot"/>
+      <StadiumSponsorship Name="Sponsor du stade"/>
+      <GeneralSponsorship Name="Sponsor général"/>
+      <CouncilGrant Name="Subvention gouvernementale/régionale"/>
+      <IndividualTVDeal Name="Contrat TV individuel"/>
+      <OtherIncome Name="Autres revenus"/>
+      <ClubMembership Name="Membres du club"/>
+      <AdditionalKitSponsorship Name="Sponsor maillot (secondaire)" />
+      <YouthTeamSponsorship Name="Sponsor maillot (autre)" />
+    </Sponsors>
+
+    <Debt Name="Prêt bancaire">
+      <Amount Name="Montant"/>
+      <From Name="De"/>
+      <EndDate Name="Date d'expiration"/>
+      <Bank Name="Banque"/>
+      <Chairman Name="Président"/>
+      <CompanyVoluntaryAgreement Name="Accord avec une société"/>
+      <PlayersUnion Name="Syndicat des joueurs"/>
+      <StateLoan Name="Prêt de l'état"/>
+      <SupportersTrustLoan Name="Association de supporter"/>
+      <GiftLoan Name="Prêt cadeau"/>
+      <MiscDebt Name="Dettes diverses" />
+    </Debt>
+
+    <Knowledge Name="Base de données">
+      <Value Name="Valeur"/>
+      <SaveMessage Name="Informations (base de données) sauvegardées !"/>
+    </Knowledge>
+    <FutureTransfer Name="Futurs Transferts">
+      <ToolbarIcon Name="Futurs Transferts"/>
+      <GroupBoxHeader Name="Futurs Transferts - Détails"/>
+      <SellerClub Name="De"/>
+      <BuyerClub Name="A"/>
+      <Player Name="Joueur"/>
+      <Value Name="Coût du transfert"/>
+      <TransferDate Name="Date du transfert"/>
+      <ChangeBuyerClubTitle Name="Changer le club de destination"/>
+      <SearchClubMessage Name="Taper le nom du club à rechercher"/>
+      <ProposalDetails>
+        <AdditionalClauses Name="Clauses additionnels">
+          <PercentageOfProfitFromNextSale Name="Pourcentage de profit sur la prochaine vente"/>
+          <PercentageOfNextSale Name="Pourcentage sur la prochaine vente"/>
+          <BuyBackPrice Name="Prix de rachat"/>
+          <ArrangeFriendly Name="Arrangement à l'amiable"/>
+        </AdditionalClauses>
+        <AdditionalFees Name="Primes supplémentaires">
+          <Value Name="Valeur"/>
+          <Months Name="Mois"/>
+          <AtLeast Name="Au moins"/>
+          <Maximum Name="Maximum"/>
+          <Games Name="Jeux"/>
+          <Goals Name="But"/>
+          <MonthlyInstallments Name="Versements mensuels"/>
+          <AfterLeagueAppearances Name="Apparation après le championnat"/>
+          <PerLeagueAppearances Name="Par apparition dans le championnat"/>
+          <AfterInternationalAppearances Name="Après apparation en sélection internationale"/>
+          <MinimumLeagueGoals Name="Minimum de buts en championnat"/>
+        </AdditionalFees>
+      </ProposalDetails>
+      <SaveMessage Name="Les futurs transferts ont été sauvegardés"/>
+    </FutureTransfer>
+
+    <RetireDates Name="Retraite">
+      <ToolbarIcon Name="Retraite"/>
+      <GroupBoxHeader Name="Date de la retraite - Détails"/>
+      <Player Name="Joueur"/>
+      <Date Name="Date de la retraite"/>
+      <SaveMessage Name="Les dates de retraite ont été sauvegardées."/>
+    </RetireDates>
+
+    <Languages Name="Langue(s)">
+      <Language Name="Langue"/>
+      <Value Name="Valeur"/>
+      <Common>
+        <ChangeLanguage Name="Changer la langue"/>
+        <SearchLanguageMessage Name="Entrer la langue à rechercher."/>
+      </Common>
+    </Languages>
+
+    <OfficialInformation Name="Détails">
+      <DisplayedName Name="Nom"/>
+      <Official Name="Arbitre"/>
+      <Information Name="Information"/>
+      <UniqueID Name="ID"/>
+      <FirstName Name="Prénom"/>
+      <LastName Name="Nom"/>
+      <CommonName Name="Surnom"/>
+      <DateOfBirth Name="Date de naissance"/>
+      <CityOfBirth Name="Lieu de naissance"/>
+      <Nationality Name="Nationalité"/>
+    </OfficialInformation>
+
+    <OfficialData Name="Données de l'arbitre">
+      <CA Name="Niveau actuel"/>
+      <PA Name="Potentiel"/>
+      <Reputation Name="Réputation"/>
+      <FIFAOfficial Name="Arbitre FIFA"/>
+      <ContinentalOfficial Name="Arbitre continental"/>
+      <AssistantRefereeOnly Name="Arbitre assistant"/>
+      <AllowingFlow Name="Laisser couler"/>
+      <Discipline Name="Discipline"/>
+      <ImportantMatches Name="Matchs imp."/>
+      <Pressure Name="Pression"/>
+      <Refereeing Name="Arbitrage"/>
+      <RunningLine Name="Direction de courses"/>
+      <TimeKeeping Name="Chronométrage"/>
+      <CompetitionsAsReferee Name="Compétitions où il arbitre"/>
+      <CompetitionsAsAssistant Name="Compétitions où il est assistant"/>
+    </OfficialData>
+
+    <ClubPlayerClauses Name="Clauses des joueurs">
+      <Clause Name="Clause"/>
+      <PlayerName Name="Nom du joueur"/>
+      <Club Name="Club"/>
+      <SellOnClause Name="Clause de revente">
+        <Percentage Name="Pourcentage"/>
+        <SignedFor Name="Prix du transfert"/>
+      </SellOnClause>
+      <PlayerBuyBack Name="Rachat de joueur">
+        <Value Name="Valeur"/>
+      </PlayerBuyBack>
+      <AppearenceMoney Name="Prime de temps de jeu">
+        <Type Name="Type">
+          <AfterLeagueAppearances Name="Après apparition en championnat"/>
+          <PerLeagueAppearances Name="Après apparition en championnat"/>
+          <AfterInternationalAppearances Name="Après sélections internationales"/>
+          <MinimumLeagueGoals Name="Nombre de buts en championnat"/>
+          <Unknown Name="Inconnu"/>
+        </Type>
+        <Value Name="Frais"/>
+        <AppearencesNeeded Name="Apparitions requise"/>
+        <AppearencesTotal Name="Apparitions requise"/>
+        <Appearences Name="Apparitions"/>
+        <GoalsNeeded Name="Buts requis"/>
+        <GoalsAlreadyScored Name="Buts marqués"/>
+      </AppearenceMoney>
+      <Value Name="Valeur"/>
+      <Months Name="Mois"/>
+      <AtLeast Name="Au moins"/>
+      <Maximum Name="Maximum"/>
+      <Games Name="Match"/>
+      <Goals Name="Buts"/>
+      <MonthlyInstallments Name="Acomptes mensuels"/>
+      <AfterLeagueAppearances Name="Après apparition en championnat"/>
+      <PerLeagueAppearances Name="Après apparition en championnat"/>
+      <AfterInternationalAppearances Name="Après sélections internationales"/>
+      <MinimumLeagueGoals Name="Nombre de buts en championnat"/>
+      <SaveMessage Name="Les clauses des joueurs ont bien été sauvegardées"/>
+    </ClubPlayerClauses>
+
+    <AgentInformation Name="Détails">
+      <DisplayedName Name="Nom"/>
+      <Agent Name="Agent"/>
+      <Information Name="Information"/>
+      <UniqueID Name="ID"/>
+      <FirstName Name="Prénom"/>
+      <LastName Name="Nom"/>
+      <CommonName Name="Surnom"/>
+      <DateOfBirth Name="Date de naissance"/>
+      <Age Name="Age"/>
+      <CityOfBirth Name="Lieu de naissance"/>
+      <Nationality Name="Nationalité"/>
+      <Reputation Name="Réputation"/>
+      <Attributes Name="Caractèristiques">
+        <Patience Name="Patience"/>
+        <AgentFeeDemands Name="Primes demandées par l'agent"/>
+        <WillingnessToToutPlayers Name="Volonté à vendre ses joueurs"/>
+        <Based Name="Basé"/>
+        <Clients Name="Clients"/>
+        <NumberOfClients Name="Nombre de clients"/>
+      </Attributes>
+      <SaveMessage Name="Les informations de l'agent ont bien été sauvegardées"></SaveMessage>
+    </AgentInformation>
+
+    <MatchPreparation Name="Préparation de match">
+      <FamiliarityLevels Name="Connaissance de la tactique">
+        <Formation Name="Formation"/>
+        <Mentality Name="Etat d'esprit"/>
+        <PassingStyle Name="Style de passes"/>
+        <CreativeFreedom Name="Liberté créativité"/>
+        <ClosingDown Name="Pressing"/>
+        <Marking Name="Marquage"/>
+        <Tempo Name="Tempo"/>
+        <Width Name="Largeur"/>
+      </FamiliarityLevels>
+    </MatchPreparation>
+    <Board Name="Autorisation">
+      <BoardNumberOfOtherStaffAdvised Name="Nombre d'autres staff autorisés" />
+      <BoardNumberOfScoutsAdvised Name="Nombre de recruteurs autorisés" />
+      <Minimum Name="Min:" />
+      <Gamer Name="Board">
+        <Options Name="Options"/>
+        <AllowSquadRegistrationAnytime Name="Permettre enregistrement de l'équipe n'importe quand"/>
+        <AllowSquadNumbersAnytime Name="Permettre enregistrement des numéros de l'équipe n'importe quand"/>
+        <BecomeUnsackable Name="Devenir non licenciable"/>
+      </Gamer>
+    </Board>
+  </Attributes>
+  <SearchMessages>
+    <Nation>
+      <Message Name="Entrer le nom de la Nation à rechercher"/>
+      <Title Name="Rechercher une Nation"/>
+    </Nation>
+    <Club>
+      <Message Name="Entrer le nom du Club à rechercher"/>
+      <Title Name="Rechercher un Club"/>
+    </Club>
+    <Person>
+      <Message Name="Entrer le nom d'une Personne à rechercher"/>
+      <Title Name="Rechercher une Personne"/>
+    </Person>
+  </SearchMessages>
+
+  <!-- Filter Settings-->
+  <Filter Name="Filtre">
+    <WindowName Name="Personnaliser votre recherche"/>
+    <FilterEnable Name="Est activé"/>
+    <FilterTypes Name="Recherche de :">
+      <Player Name="Joueur"/>
+      <PlayerStaff Name="Joueur / Staff"/>
+      <Coach Name="Staff"/>
+      <Club Name="Club"/>
+    </FilterTypes>
+    <AddFilter Name="Ajouter un filtre"/>
+    <ButtonSearch Name="Rechercher"/>
+    <ButtonCancel Name="Annuler"/>
+    <Messages>
+      <Founded Name="Le résultat de la recherche a trouvé, "/>
+      <NotFound Name="Aucun résultat trouvé avec vos critères de sélection"/>
+      <PlayersErrorMessage Name=" joueurs, voulez-vous tous les ajouter à votre liste de recherche ? Selon le nombre, cela peut prendre un moment..."/>
+      <Warning Name="Attention"/>
+      <Information Name="Information"/>
+    </Messages>
+    <Settings Name="Filtre">
+      <PlayersColumns Name="Colonnes joueurs"/>
+      <StaffColumns Name="Colonnes staffs"/>
+      <ClubsColumns Name="Colonnes clubs"/>
+      <DisplayedColumns Name="Désactiver les colonnes"/>
+      <AvaiableItems Name="Objets disponibles"/>
+    </Settings>
+  </Filter>
+
+  <!--  Other Strings -->
+  <Common>
+    <Years Name="ans"/>
+    <SearchList Name="Liste de recherche"/>
+    <GameLoaded Name="La partie a été chargée"/>
+    <Yes Name="Oui"/>
+    <No Name="Non"/>
+    <True Name="Vrai"/>
+    <False Name="Faux"/>
+    <GreaterThanOrEqual Name="Supérieur ou égal à"/>
+    <LessThanOrEqual Name="Inférieur ou égal à"/>
+    <Between Name="Entre"/>
+    <Equal Name="Egal"/>
+    <NotEqual Name="N'est pas égal à"/>
+    <Search Name="Recherche..."/>
+    <Export Name="Exporter"/>
+    <Import Name="Importer"/>
+    <Options Name="Options"/>
+    <PlayerDialogFileType Name="Fiche du joueur sur FMRTE"/>
+    <YouNeedToLoadYourSaveGame Name="Premièrement, vous devez charger votre partie dans Football Manager"/>
+    <FMNotDetected Name="FMRTE ne détecte pas FM 2010"/>
+    <GameNotLoaded Name="Premièrement, vous devez appuyer sur le bouton Charger"/>
+    <Information Name="Information"/>
+    <ERROR Name="Erreur"/>
+    <Unknown Name="Inconnu"/>
+    <CopyUID Name="Copier ID"/>
+    <UploadProfile Name="Mettre le profil en ligne"/>
+    <WonderKid Name="Créer un enfant miracle"/>
+    <AttributesReplaced Name="Cette action va remplacer les attributs de ce joueur, une fois enclenché, FMRTE ne pourra plus remettre les anciens attributs du joueur.
+Si vous souhaitez sauvegarder les attributs du joueur, Exporter les attributs en utilisant le bouton 'Exporter'.
+
+Voulez-vous continuer?"/>
+    <DontShowAgain Name="Ne plus me remontrer ce message"/>
+    <ExportCSV Name="Exporter CSV"/>
+    <UEFARegistration Name="Enregistré (UEFA)"/>
+    <WrongVersionSelected Name="La version du jeu que vous avez sélectionnée ne correspond pas à la version de votre jeu."/>
+    <!-- new 4.1.2 -->
+    <AtLeastOnePlayer_Warning Name="Au moins un joueur doit être sélectionné"/>
+    <SelectAll Name="Tout sélectionner"/>
+    <DeselectAll Name="Désélectionner tout"/>
+    <Exporting Name="Exporter '">
+      <ToXMLFiles Name="' joueurs  vers un fichier XML"/>
+      <ToCSVFiles Name="' joueurs  vers un fichier CSV"/>
+    </Exporting>
+    <ExportToCSV Name="Export en CSV">
+      <ChooseFolder Name="Sélectionnez le dossier où FMRTE va sauvegarder le fichier CSV"/>
+    </ExportToCSV>
+    <ExportToXML Name="Export en XML">
+      <ChooseFolder Name="Sélectionnez le dossier où FMRTE va sauvegarder le fichier XML"/>
+    </ExportToXML>
+  </Common>
+
+  <HistoryPoints Name="Historique">
+    <CreateHistoryPoint Name="Historique"/>
+    <NewHistoryPoint Name="Nouvel historique"/>
+    <Graph Name="Graphique"/>
+    <Attributes Name="Caractèristiques"/>
+    <AlreadyExists Name="Il y a déjà un historique pour cette date, voulez-vous le remplacer ?"/>
+    <Warning Name="Attention"/>
+    <SaveMessage Name="Nouvel historique crée"/>
+  </HistoryPoints>
+  <!-- Editor Settings-->
+  <Settings>
+    <General Name="Réglages des options">
+      <Language Name="Langue"/>
+      <Author Name="Auteur"/>
+      <Version Name="Version"/>
+      <Contact Name="Contact"/>
+      <Desciption Name="Description"/>
+      <Currency Name="Monnaie"/>
+      <Wages Name="Salaire">
+        <Weekly Name="Hebdomadaire"/>
+        <Monthly Name="Mensuel"/>
+        <Yearly Name="Annuel"/>
+        <PerWeek Name="par semaine"/>
+        <PerMonth Name="par mois"/>
+        <PerAnnum Name="par année"/>
+      </Wages>
+      <ShortDistance Name="Distance">
+        <Metres Name="Mètre"/>
+        <Yards Name="Yards"/>
+      </ShortDistance>
+      <ShowAdditionalFutureTransferInfo Name="Montrer les infos du futur transfert"/>
+      <Restore Name="Restaurer les options par défault"/>
+      <RestoreButton Name="Restaurer"/>
+      <AlwaysReloadScreens Name="Recharger les informations de l'écran lors d'un changement d'onglet (LENT)"/>
+      <SaveMessage Name="Les réglages des options ont été sauvegardés"/>
+    </General>
+    <ClubSettings>
+      <PlayersList Name="Options de la liste des joueurs d'un club ">
+        <DisplayItems Name="Options disponible"/>
+      </PlayersList>
+      <SaveMessage Name="Les options de la liste des joueurs d'un club ont été sauvegardées"/>
+    </ClubSettings>
+  </Settings>
+
+  <Swap Name="Echange de joueur">
+    <Swap Name="Echanger"/>
+    <From Name="De"/>
+    <With Name="Avec"/>
+    <ChooseAPlayer Name="Choisir un joueur à échanger"/>
+    <SaveMessage Name="L'échange des joueurs a été sauvegardé"/>
+    <ErrorMessage Name="Une erreur a été rencontrée lors de l'échange An error occurred when swapping the players, please reload your game"/>
+    <ContractNeeded Name="L'échange a été annulé car les deux joueurs doivent avoir un contrat avec un club."/>
+    <SearchPlayer Name="Choisir le joueur à échanger"/>
+    <TypeNameOfPlayer Name="Entrer le nom du joueur qui doit être échanger"/>
+    <GamerJobSwapped Name="Maintenant, vous DEVEZ sauvegarder votre partie (dans un nom différent dans le cas d'un problème) et recharger la partie pour que le changement prenne effet"/>
+    <SwapStaff Name="Echanger membre du staff"/>
+    <SwapStaffSearch Name="Choisir un membre du staff à échanger"/>
+    <GamersCanOnlyBeManagers Name="Les joueurs peuvent seulement être Entraineur"/>
+    <OnlyBeNationalManagers Name="Vous ne pouvez être que sélectionneur"/>
+    <StaffWithSameJob Name="Vous ne pouvez qu'échanger des personnes ayant le même emploi"/>
+    <!-- new FMRTE 13-->
+    <PersonDetailsA Name="Echanger" />
+    <PersonDetailsB Name="Contre" />
+    <Name Name="Nom" />
+    <Role Name="Emploi" />
+    <Club Name="Club" />
+    <Nation Name="Nation" />
+    <Notes Name="Notes" />
+    <NeedDifferentPerson Name="Vous devez sélectionner une personne différente" />
+    <SelectJobs Name="Vous devez sélectionner l'emploi que vous voulez échanger" />
+    <NoJobsFound Name="Vous devez sélectionner au moins une personne qui à cette emploi." />
+    <InvalidSwapOptions Name="Option invalide, merci de lire les notes d'échanges" />
+    <MissingStaffMember Name="Vous devez sélectionner un membre du staff pour l'échange" />
+    <StaffSwapSaveMessage Name="Echange d'emploi effectué avec succès" />
+  </Swap>
+
+  <Shortlists Name="Liste">
+    <NewShortlist Name="Nouvelle liste"/>
+    <LoadShortlist Name="Charger liste"/>
+    <SaveAsShortlist Name="Sauvegarder liste sous"/>
+    <ClearList Name="Effacer cette liste"/>
+    <FilesDialogFileType Name="Shortlists Files"/>
+    <TotalPlayers Name="trouvé(s)"/>
+    <AddToNew Name="Ajouter à une nouvelle liste"/>
+    <Remove Name="Retirer de la liste"/>
+    <AddToExisting Name="Ajouter au fichier d'une liste"/>
+    <RecentlyUsed Name="Liste récemment utilisée"/>
+    <AddTo Name="Ajouter à"/>
+  </Shortlists>
+
+  <JobType Name="Job">
+    <Free Name="Libre"/>
+    <Coach Name="Préparateur"/>
+    <Chairman Name="Président"/>
+    <ManagingDirector Name="Directeur général"/>
+    <DirectorOfFootball Name="Directeur sportif"/>
+    <Director Name="Dirigeant"/>
+    <Physio Name="Kiné"/>
+    <Scout Name="Recruteur"/>
+    <Manager Name="Entraineur"/>
+    <AstManager Name="Entraineur adjoint"/>
+    <FitnessCoach Name="Préparateur physique"/>
+    <GKCoach Name="Entraineur des gardiens"/>
+    <YouthCoach Name="Entraineur des jeunes"/>
+    <FirstTeamCoach Name="Préparateur Eq. Première"/>
+    <GeneralManager Name="Manager général"/>
+    <CaretakerManager Name="Entraineur Intérimaire"/>
+    <ManagerU19 Name="Entraineur -19"/>
+    <ManagerU21 Name="Entraineur -21"/>
+    <HeadOfYouthDevelopment Name="Responsable formation des jeunes" />
+    <HeadPhysio Name="Responsable kinés" />
+    <ChiefScout Name="Responsable recrutement" />
+    <Owner Name="Propriétaire" />
+  </JobType>
+
+  <Menus>
+    <CopyToClipBoard Name="Copier le nom dans le presse-papier"/>
+    <CopyIDToClipBoard Name="Copier ID dans le presse-papier"/>
+    <SwapNationalTeamJob Name="Échanger le staff avec une nation"/>
+    <SwapClubJob Name="Échange d'un staff avec un autre club"/>
+  </Menus>
+
+  <StaffLists>
+    <Options Name="Options des contrats"/>
+    <Renew Name="Renouveler pour 4 ans"/>
+    <Expire Name="Rompre tous les contrats"/>
+    <OneMoreYear Name="+1 an"/>
+    <OneLessYear Name="-1 an"/>
+    <RenewMessage Name="Tous les contrats ont été renouvelées pour 4 ans"/>
+    <ExpireMessage Name="Tous les contrats ont expirés"/>
+    <OneMoreYearMessage Name="La durée de tous les contrats a été augmenté d'un an"/>
+    <OneLessYearMessage Name="La durée de tous les contrats a été descendu d'un an"/>
+  </StaffLists>
+
+  <CloneCenter Name="Centre de clonage">
+    <PlayersToReplace Name="Joueur à cloner"/>
+    <AttributesNotToClone Name="Attributs à ne pas cloner"/>
+    <SearchPlayerTitle Name="Ajoute le joueur à remplacer"/>
+    <SearchPlayer Name="Entrer le nom du joueur à remplacer"/>
+    <CloneFinished Name="Tous les joueurs de la liste ont été clonés avec succès"/>
+  </CloneCenter>
+
+  <MiniFMRTE Name="mini FMRTE">
+    <Player>
+      <IsRegen Name="Regen"/>
+      <InternationalRetirement Name="Retraité du football int."/>
+      <DeclaredForNation Name="A choisi sa nation"/>
+      <UID Name="ID"/>
+      <CityOfBirth Name="Lieu de naissance"/>
+      <DisplayedName Name="Nom"/>
+      <FirstName Name="Prénom"/>
+      <LastName Name="Nom"/>
+      <CommonName Name="Surnom"/>
+      <IsInjured Name="Inj."/>
+      <IsBanned Name="Sus."/>
+      <CA Name="CA"/>
+      <PA Name="PA"/>
+      <Value Name="Val"/>
+      <AskValue Name="Val.D"/>
+      <Born Name="Née"/>
+      <Age Name="Age"/>
+      <MatchSharpness Name="Forme"/>
+      <Condition Name="Condition"/>
+      <Jadedness Name="Fatigue"/>
+      <IntCaps Name="Sel Int."/>
+      <IntGoals Name="But(s) Int."/>
+      <U21Caps Name="Sel Esp."/>
+      <U21Goals Name="But(s) Esp."/>
+      <Height Name="Taille"/>
+      <Weight Name="Poids"/>
+      <Morale Name="Moral"/>
+      <AllNames Name="Tous les noms"/>
+      <WorldReputation Name="Rep.M"/>
+      <CurrentReputation Name="Rep.A"/>
+      <HomeReputation Name="Rep.L"/>
+      <HasContract Name="A un contrat"/>
+      <HasLoanContract Name="A un contrat de prêt"/>
+      <PreferedMoves Name="Mouv. préf"/>
+    </Player>
+    <PlayerRating Name="Note">
+      <ActualRating Name="Note actuelle"/>
+      <PotentialRating Name="Note potentielle"/>
+      <ActualBestPos Name="Meilleur position actuelle"/>
+      <PotentialBestPos Name="Meilleur position potentielle"/>
+      <Weight Name="Poids"/>
+      <Settings Name="Note"/>
+      <Overview Name="Système de note"/>
+      <DialogFileType Name="FMRTE - Fichier des notes"/>
+      <SaveMessage Name="Les notes ont bien été sauvegardées"/>
+    </PlayerRating>
+    <Contract Name="Contrat">
+      <Bonus Name="Bonus">
+        <NewBonus Name="Nouveau bonus"/>
+        <AppearanceBonus Name="Prime d'apparition"/>
+        <GoalBonus Name="Prime de but"/>
+        <CleanSheetBonus Name="Prime de but inviolé"/>
+        <TeamOfYearBonus Name="Bonus équipe de l'année"/>
+      </Bonus>
+      <Club Name="Club"/>
+      <ContractExpiryDate Name="Date d'expiration"/>
+      <ContractStarted Name="Date de commencement"/>
+      <WagePerWeek Name="Salaire"/>
+      <ContractType Name="Type"/>
+      <TeamStatus Name="Stats dans l'équipe">
+        <Indispensable Name="Indispensable au club"/>
+        <FirstTeam Name="Joueur important de l'équipre première"/>
+        <SquadRotation Name="Utilisé dans la rotation de l'effectif"/>
+        <Backup Name="Solution de remplacement en équipe première"/>
+        <HotProspect Name="Grand espoir pour l'avenir"/>
+        <DecentYoung Name="Jeune joueur correct"/>
+        <NotNeeded Name="Superflu"/>
+      </TeamStatus>
+      <Unhappiness Name="Mécontent"/>
+      <TransferStatus Name="Statut Transfert/Prêt">
+        <None Name="Inconnu"/>
+        <Listed Name="Sur la liste"/>
+        <ByRequest Name="Liste des transferts (demande du joueur)"/>
+        <NotForSell Name="Pas disponible (transfert)"/>
+        <NotForLoan Name="Pas disponible (prêt)"/>
+      </TransferStatus>
+      <AgreedPrice Name="Accord sur le prix"/>
+      <SquadNumber Name="Numéro"/>
+    </Contract>
+    <LoanContract Name="Contrat de prêt">
+      <AppearanceBonus Name="Bonus d'apparition"/>
+      <Club Name="Club"/>
+      <ContractExpiryDate Name="Date d'expiration"/>
+      <ContractStarted Name="Date de commencement"/>
+      <GoalBonus Name="Bonus de but"/>
+      <WagePerWeek Name="Salaire"/>
+      <ContractType Name="Type"/>
+      <AgreedPrice Name="Accord sur le prix"/>
+    </LoanContract>
+    <Nation Name="Nation">
+      <Overview Name="Informations"/>
+      <ID Name="Nation ID"/>
+      <Name Name="Nation"/>
+      <Reputation Name="Réputation"/>
+      <Capital Name="Capitale"/>
+      <Continent Name="Continent"/>
+      <Importance Name="Importance">
+        <VeryImportant Name="Très important"/>
+        <Important Name="Important"/>
+        <Unimportant Name="Peu important"/>
+        <Useless Name="Inutile"/>
+      </Importance>
+      <Development Name="Developpement">
+        <Developed Name="Développée"/>
+        <Developing Name="En développement"/>
+        <ThirdWorld Name="Tiers-Monde"/>
+      </Development>
+      <Economy Name="Économie"/>
+      <EuroMember Name="Membre de l'UE"/>
+      <YearsToGainNationality Name="Année pour acquérir la nationalité"/>
+      <FIFAPosition Name="Classement FIFA"/>
+      <FIFAScore Name="Score FIFA"/>
+      <LeagueImportancy Name="Importance du championnat"/>
+      <YearAffiliatedFIFA Name="Année d'affiliation à la FIFA"/>
+      <YearAffiliatedToFederation Name="Année d'affiliation à la Fédération"/>
+      <YearAssociationFormed Name="Année de fondation"/>
+      <FaPatience Name="Patience Fédération"/>
+      <ForgeinManagerLikelihood Name="Probabilité d'un sélectionneur étranger"/>
+      <FaFinancialPower Name="Pouvoir financier de la Fédération"/>
+      <YouthRating Name="Notation des jeunes"/>
+      <SaveMessage Name="Les informations du pays ont été sauvegardées"/>
+    </Nation>
+    <GoalKeeperAttributes Name="Caract. de gardien">
+      <AerialAbility Name="Sorties aériennes"/>
+      <CommandOfArea Name="Autorité"/>
+      <Communication Name="Diriger sa défense"/>
+      <Eccentricity Name="Excentricité"/>
+      <Handling Name="Prise de balle"/>
+      <Kicking Name="Dégagements"/>
+      <OneOnOnes Name="Un contre un"/>
+      <Reflexes Name="Réflexes"/>
+      <RushingOut Name="Sorties dans les pieds"/>
+      <TendencyToPunch Name="Contrôle de balle"/>
+      <Throwing Name="Relance à la main"/>
+    </GoalKeeperAttributes>
+    <MentalAttributes Name="Caract. mentales">
+      <Aggression Name="Agressivité"/>
+      <Anticipation Name="Anticipation"/>
+      <Bravery Name="Courage"/>
+      <Composure Name="Sang-froid"/>
+      <Concentration Name="Concentration"/>
+      <Vision Name="Créativité"/>
+      <Decisions Name="Décisions"/>
+      <Determination Name="Détermination"/>
+      <Flair Name="Style"/>
+      <Leadership Name="Leadership"/>
+      <OffTheBall Name="Appels de balle"/>
+      <Positioning Name="Placement"/>
+      <Teamwork Name="Collectif"/>
+      <Workrate Name="Activité"/>
+    </MentalAttributes>
+    <PhysicalAttributes Name="Caract. physiques">
+      <Acceleration Name="Accélération"/>
+      <Agility Name="Agilité"/>
+      <Balance Name="Equilibre"/>
+      <Jumping Name="Saut"/>
+      <LeftFoot Name="Pied gauche"/>
+      <NaturalFitness Name="Qualités phys. nat."/>
+      <Pace Name="Vitesse"/>
+      <RightFoot Name="Pied droit"/>
+      <Stamina Name="Endurance"/>
+      <Strength Name="Force"/>
+    </PhysicalAttributes>
+    <HiddenAttributes Name="Caract. cachées">
+      <Consistency Name="Régularité"/>
+      <Dirtiness Name="Violence"/>
+      <ImportantMatches Name="Matchs importants"/>
+      <InjuryProness Name="Prédisp. aux blessures"/>
+      <Versatility Name="Polyvalence"/>
+    </HiddenAttributes>
+    <TechnicalAttributes Name="Caract. techniques">
+      <Corners Name="Corners"/>
+      <Crossing Name="Centres"/>
+      <Dribbling Name="Dribble"/>
+      <Finishing Name="Finition"/>
+      <FirstTouch Name="Contrôle de balle"/>
+      <Freekicks Name="Coup-francs"/>
+      <Heading Name="Tête"/>
+      <LongShots Name="Tirs de loin"/>
+      <Longthrows Name="Touches longues"/>
+      <Marking Name="Marquage"/>
+      <Passing Name="Passes"/>
+      <PenaltyTaking Name="Penalty"/>
+      <Tackling Name="Tacles"/>
+      <Technique Name="Technique"/>
+    </TechnicalAttributes>
+    <PersonalityAttributes Name="Personnalité">
+      <Adaptability Name="Adaptation"/>
+      <Ambition Name="Ambition"/>
+      <Loyalty Name="Loyauté"/>
+      <Pressure Name="Pression"/>
+      <Professional Name="Professionnel"/>
+      <Sportsmanship Name="Sportivité"/>
+      <Temperament Name="Tempérament"/>
+      <Controversy Name="Controverse"/>
+    </PersonalityAttributes>
+    <Positions Name="Positions">
+      <FreeRole Name="Rôle libre"/>
+      <Striker Name="Attaquant" Small="BT"/>
+      <AttackingMidfielder Name="Milieu offensif" Small="MO"/>
+      <Midfielder Name="Milieu" Small="M"/>
+      <DefensiveMidfielder Name="Milieu défensif" Small="MD"/>
+      <Defender Name="Défenseur" Small="D"/>
+      <Sweeper Name="Libéro" Small="LIB"/>
+      <WingBack Name="Arrière latéral" Small="AL"/>
+      <Goalkeeper Name="Gardien" Small="GB"/>
+      <Left Name="Gauche" Small="G"/>
+      <Centre Name="Centre" Small="C"/>
+      <Right Name="Droit" Small="D"/>
+      <PositionsDesc Name="Positions"/>
+    </Positions>
+    <NewPositions Name="Positions détaillées">
+      <Striker Name="Attaquant"/>
+      <AttackingMidCentral Name="Milieu offensif centre"/>
+      <AttackingMidLeft Name="Milieu offensif gauche"/>
+      <AttackingMidRight Name="Milieu offensif droit"/>
+      <DefenderCentral Name="Defenseur central"/>
+      <DefenderLeft Name="Défenseur gauche"/>
+      <DefenderRight Name="Défenseur droit"/>
+      <DefensiveMidfielderCentral Name="Milieu défensif"/>
+      <MidfielderCentral Name="Milieu centre"/>
+      <MidfielderLeft Name="Milieu gauche"/>
+      <MidfielderRight Name="Milieu droit"/>
+      <WingBackLeft Name="Arrière latéral gauche"/>
+      <WingBackRight Name="Arrière latéral droit"/>
+    </NewPositions>
+    <!-- Staff zone-->
+    <Staff>
+      <IsRegen Name="Regen"/>
+      <Information Name="Information"/>
+      <DisplayedName Name="Nom"/>
+      <FirstName Name="Prénom"/>
+      <LastName Name="Nom"/>
+      <CommonName Name="Surnom"/>
+      <Age Name="Age"/>
+      <Born Name="Date de naissance"/>
+      <CityOfBirth Name="Ville de naissance"/>
+      <CA Name="Niveau actuel"/>
+      <PA Name="Potentiel possible"/>
+      <IntCaps Name="Sel Int."/>
+      <IntGoals Name="But(s) Int."/>
+      <U21Caps Name="Sel Esp."/>
+      <U21Goals Name="But(s) Esp."/>
+      <ID Name="ID"/>
+      <WorldReputation Name="Réputation mondiale"/>
+      <CurrentReputation Name="Réputation actuelle"/>
+      <HomeReputation Name="Réputation nationale"/>
+      <HasContract Name="A un contrat"/>
+      <ContractJob Name="Job"/>
+      <Team Name="Equipe"/>
+      <NationalTeamJob Name="National Job"/>
+      <NationalTeam Name="National Team"/>
+    </Staff>
+    <StaffRating Name="Caractéristiques de coaching">
+      <Strength Name="Force"/>
+      <Aerobic Name="Aérobic"/>
+      <Goalkeeping Name="Gardien"/>
+      <Tactics Name="Tactique"/>
+      <BallControl Name="Contrôle de balle"/>
+      <Defending Name="Défense"/>
+      <Attacking Name="Attaque"/>
+      <Shooting Name="Tirs"/>
+      <SetPieces Name="Coups de pieds arr."/>
+    </StaffRating>
+    <ChairmanAttributes Name="Carac. président">
+      <Business Name="Sens des affaires"/>
+      <Interference Name="Implication"/>
+      <Patience Name="Patience"/>
+      <Resources Name="Ressources"/>
+    </ChairmanAttributes>
+    <CoachingAttributes Name="Caract. coaching">
+      <Attacking Name="Offensif"/>
+      <Defending Name="Défensif"/>
+      <Fitness Name="Forme"/>
+      <Goalkeepers Name="Gardiens"/>
+      <Mental Name="Mental"/>
+      <Player Name="Joueur"/>
+      <Tactical Name="Tactique"/>
+      <Technical Name="Technique"/>
+      <ManManagement Name="Gestion des hommes"/>
+      <WorkingWithYoungsters Name="Travail avec jeunes"/>
+    </CoachingAttributes>
+    <StaffMentalAttributes Name="Caract. mentales">
+      <Adaptability Name="Adaptation"/>
+      <JudgingPlayerAbility Name="Évaluation joueurs"/>
+      <JudgingPlayerPotential Name="Évaluation potentiel"/>
+      <LevelOfDiscipline Name="Niveau de discipline"/>
+      <Motivating Name="Motivation"/>
+      <Physiotherapy Name="Kiné"/>
+      <TacticalKnowledge Name="Notions tactiques"/>
+    </StaffMentalAttributes>
+    <StaffPersonality Name="Personnalité">
+      <Adaptability Name="Adaptation"/>
+      <Ambition Name="Ambition"/>
+      <Controversy Name="Controverse"/>
+      <Determination Name="Détermination"/>
+      <Loyalty Name="Loyauté"/>
+      <Pressure Name="Pression"/>
+      <Professionalism Name="Professionnel"/>
+      <Sportsmanship Name="Sportivité"/>
+      <Temperament Name="Tempérament"/>
+    </StaffPersonality>
+    <NonTacticalAttributes Name="Caract. non tactiques">
+      <BuyingPlayers Name="Achat"/>
+      <HardnessOfTraining Name="Entraîne dur"/>
+      <MindGames Name="Psychologie"/>
+      <SquadRotation Name="Rotation"/>
+    </NonTacticalAttributes>
+    <RolesAttributes Name="Caract. postes">
+      <AssistantManager Name="Entraineur adjoint"/>
+      <Coach Name="Préparateur"/>
+      <FitnessCoach Name="Préparateur physique"/>
+      <GoalkeepingCoach Name="Entraineur des gardiens"/>
+      <Manager Name="Entraineur"/>
+      <Physio Name="Kiné"/>
+      <Scout Name="Recruteur"/>
+    </RolesAttributes>
+    <TacticalAttributes Name="Carac. tactiques">
+      <Attacking Name="Attaque"/>
+      <Depth Name="Profondeur"/>
+      <Directness Name="Style direct"/>
+      <Flamboyancy Name="Extravagance"/>
+      <Flexibility Name="Flexibilité"/>
+      <FreeRoles Name="Rôle libre"/>
+      <Marking Name="Marquage"/>
+      <OffSide Name="Hors-jeu"/>
+      <Pressing Name="Pressing"/>
+      <SittingBack Name="Attentisme"/>
+      <Tempo Name="Rythme"/>
+      <UseOfPlaymaker Name="Util. d'un meneur"/>
+      <UseOfSubstitutions Name="Util. des remplaçants"/>
+      <Width Name="Utilise largeur"/>
+    </TacticalAttributes>
+    <GamerMentalAttributes Name="Carac. mentales">
+      <HandsOnApproach Name="Investissement"/>
+      <DomesticPlayerBias Name="Joueurs non-étrangers"/>
+      <TacticalConsistency Name="Reconduction tactiques"/>
+      <ClubPlayerLoyalty Name="Loyauté club/joueurs"/>
+      <SquadDiscipline Name="Fermeté"/>
+      <FinancialControl Name="Contrôle des finances"/>
+    </GamerMentalAttributes>
+    <Config>
+      <Edit Name="Editer"/>
+      <AddColumn Name="Aj. Col"/>
+      <RemColumn Name="Sup. Col"/>
+      <AddRow Name="Aj. Ligne"/>
+      <RemRow Name="Sup. Ligne"/>
+      <SaveChanges Name="Sauvegarder les changements"/>
+    </Config>
+  </MiniFMRTE>
+
+  <FMVersionSelect Name="Choisissez la version de votre jeu">
+    <Info Name="FMRTE a bien détécté que votre jeu est lancé mais n'arrive pas à détecté la version de votre jeu.
+Merci de choisir votre version."/>
+    <GameVersion Name="Version du jeu"/>
+    <Warning Name="Il est important de savoir que si vous sélectionnez une mauvaise version de votre jeu, FMRTE va charger des données corrompues.
+Il est possible que votre jeu plante. Soyez sur de sélectionnez la bonne version.
+
+Note: Si la version de votre jeu n'apparait pas dans la liste, c'est uniquement parce que FMRTE ne supporte pas votre version."/>
+    <Versions>
+      <FM_11_0_0_152451       Name="FM 2011 - 11.0.0.152451 DEMO (STEAM)"/>
+      <FM_11_1_0_157094_STEAM Name="FM 2011 - 11.1.0.157094 (Version STEAM avec le Patch 11.1)"/>
+      <FM_11_1_0_157094_DVD   Name="FM 2011 - 11.1.0.157094 (Version DVD avec le Patch 11.1)"/>
+    </Versions>
+  </FMVersionSelect>
+
+  <Tactics Name="Tactiques">
+    <Rating Name="Evaluation"/>
+    <TopFormations Name="5 meilleures formations"/>
+    <Positions Name="Positions"/>
+    <MinCondition Name="Condition min."/>
+  </Tactics>
+
+  <AutoUpdate>
+    <Message Name="Il y a une nouvelle version de FMRTE (v.@#VERSION#@) disponible en téléchargement.@#NEWLINE#@Voulez-vous la télécharger ?"/>
+    <WindowTitle Name="Nouvelle version disponible"/>
+  </AutoUpdate>
+
+
+  <ToolTips>
+    <TitleBar>
+      <ReloadButton Name="Actualiser la page en cours sur Football Manager"/>
+      <HomePage Name="Visiter le site de FMRTE"/>
+      <OnlineNews Name="FMRTE en ligne - News"/>
+      <OnlineHelp Name="Aide en ligne"/>
+      <Donate Name="Donation"/>
+      <FutureTransfers Name="Voir les futurs transferts"/>
+      <ShowRetirements Name="Voir les retraites des joueurs"/>
+      <Filter Name="Recherche avec filtre"/>
+      <MassEdit Name="Editeur de masse"/>
+      <Options Name="Options"/>
+      <PresetManager Name="Gestionnaire de présélection"/>
+      <LoadGame Name="Charger les données de votre sauvegarde"/>
+      <CurrentScreen Name="Afficher dans l'éditeur la page que vous êtes en train de regarder dans le jeu"/>
+      <SaveButton Name="Sauvegarder les changements"/>
+      <Favorites Name="Liens rapide des favoris"/>
+      <Freezer Name="Gestionnaire pour geler les joueurs"/>
+    </TitleBar>
+    <ScreenShot Name="Faire un screenshot..."/>
+    <MiniFMRTE Name="Montrer/cacher mini FMRTE"/>
+    <CloseFMRTE Name="Fermer FMRTE"/>
+    <MinimizeFMRTE Name="Réduire FMRTE"/>
+    <MaximizeFMRTE Name="Agrandir"/>
+  </ToolTips>
+
+  <Skins Name="Skins">
+    <Skin Name="Skin"/>
+    <Author Name="Auteur"/>
+    <Version Name="Version"/>
+    <Contact Name="Contact"/>
+    <Preview Name="Previsualisation"/>
+  </Skins>
+
+  <TransferCenter Name="Centre des transferts">
+    <TransferProposal Name="Proposition de transfert">
+      <ProposalInfo Name="Information">
+        <To Name="A"/>
+        <From Name="De"/>
+        <Status Name="Statut"/>
+        <Value Name="Valeur"/>
+        <Type Name="Type"/>
+        <Person Name="Joueur"/>
+      </ProposalInfo>
+      <TransferType>
+        <Transfer Name="Transfert"/>
+        <Loan Name="Prêt"/>
+      </TransferType>
+    </TransferProposal>
+  </TransferCenter>
+
+  <PresetManager Name="Gestionnaire de présélection">
+    <ContextMenu>
+      <Presets Name="Présélection..."/>
+      <Apply Name="Appliquer "/>
+      <Run Name="Lancer "/>
+      <CustomPresets Name="Présélection personnalisée"/>
+    </ContextMenu>
+    <AvaiablePresets Name="Présélections disponibles"/>
+    <PresetInformation Name="Informations des présélections">
+      <CommandName Name="Nom de la commande"/>
+      <Category Name="Catégorie"/>
+      <Registered Name="Est inscrit?"/>
+      <ButtonNewCategory Name="Nouvelle catégorie"/>
+      <Actions Name="Actions à éxécuter dans cette présélection">
+        <ObjectID Name="ID"/>
+        <ObjectType Name="Type"/>
+        <Attribute Name="Attributs"/>
+        <TeamNumber Name="Numéro d'équipe"/>
+        <Value Name="Valeur"/>
+        <ButtonAdd Name="Ajouter"/>
+        <ButtonRemove Name="Supprimer"/>
+        <ButtonSave Name="Sauvegarder"/>
+      </Actions>
+    </PresetInformation>
+    <PresetOptions Name="Options des présélections">
+      <NewPreset Name="Nouvelle présélection"/>
+      <ButtonNewPreset Name="Nouvelle"/>
+      <ButtonLoad Name="Charger"/>
+      <ButtonSave Name="Sauvegarder"/>
+    </PresetOptions>
+    <ButtonOK Name="OK"/>
+  </PresetManager>
+
+  <StatusBar>
+    <IngameDate Name="Date: "/>
+    <SaveGameID Name="ID Sauvegarde: "/>
+    <Humans Name=" - Joueur(s) humain(s): "/>
+    <Players Name=" - Joueurs: "/>
+    <Staff Name=" - Staff: "/>
+    <Teams Name=" - Equipes: "/>
+    <Nations Name="Nations"/>
+    <Skin Name=" Skin: "/>
+  </StatusBar>
+
+
+  <WonderKidGenerator Name="Générateur d'enfant miracle">
+    <WonderKid Name="Enfant miracle"/>
+    <Position Name="Position"/>
+    <Attributes Name="Attributs"/>
+    <AttributesList Name="Liste d'attributs"/>
+    <SpecialAttributes Name="Attributs spéciaux"/>
+    <AdditionalAttributes Name="Attributs additionels"/>
+    <NormalAttributes Name="Attributs normaux"/>
+    <Probabilities Name="Probabilités">
+      <Range1 Name="Rang Attribut 0-5 Prob:"/>
+      <Range2 Name="Rang Attribut 6-8 Prob:"/>
+      <Range3 Name="Rang Attribut 9-11 Prob:"/>
+      <Range4 Name="Rang Attribut 12-14 Prob:"/>
+      <Range5 Name="Rang Attribut 15-18 Prob:"/>
+      <Range6 Name="Rang Attribut 19-20 Prob:"/>
+      <Normal Name="Attributs normaux - Probabilités">
+        <Description Name="Ces probabilités sont pour tous les autres attributs qui ne sont pas spécifiques pour la position du joueur"/>
+      </Normal>
+      <Special Name="Attributs spéciaux - Probabilités">
+        <Description Name="Ces probabilités seront utilisées pour générer les attributs les plus importants pour le poste de joueur"/>
+      </Special>
+      <Additional Name="Attributs additionels - Probabilités">
+        <Description Name="Ces probabilités seront utilisées pour générer des attributs qui sont importants, mais pas si important que les attributs clés de la position du joueur"/>
+      </Additional>
+    </Probabilities>
+    <SaveMessage Name="Les réglages du générateur d'enfant miracle ont été sauvegardés."/>
+  </WonderKidGenerator>
+
+  <KitsAndColours Name="Maillots et couleurs">
+    <KitInformation Name="Informations des éléments des maillots"/>
+    <Item Name="Eléments">
+      <HomeKit Name="Kit DOMICILE"/>
+      <AwayKit Name="Kit EXTÉRIEUR"/>
+      <ThirdKit Name="Kit THIRD"/>
+      <GK_HomeKit Name="Kit GB DOMICILE"/>
+      <GK_AwayKit Name="Kit GB EXTÉRIEUR"/>
+      <GK_ThirdKit Name="Kit GB THIRD"/>
+    </Item>
+    <Type Name="Type">
+      <Shirt Name="Maillots"/>
+      <Shorts Name="Shorts"/>
+      <Icon Name="Icône"/>
+      <Text Name="Texte"/>
+      <Socks Name="Chaussettes"/>
+    </Type>
+    <Foreground Name="Premier plan"/>
+    <Background Name="Arrière plan"/>
+    <Outline Name="Contour"/>
+    <NumberColour Name="Couleur du numéro"/>
+    <NumberOutlineColour Name="Couleur du contour du numéro"/>
+    <Competition Name="Compétition"/>
+    <Year Name="Année"/>
+    <Example Name="Exemple"/>
+    <ItemStyle Name="Style des éléments"/>
+    <!-- new FMRTE 13 -->
+    <CustomKits Name="Kits personnalisés">
+      <Status Name="Status" />
+      <Disable Name="Désactiver" />
+      <Enable Name="Activer" />
+      <FMGameFilesFolder Name="Dossier des fichiers du jeu">
+        <Change Name="Changer" />
+      </FMGameFilesFolder>
+    </CustomKits>
+  </KitsAndColours>
+
+  <Freezer Name="Geler">
+    <ManagerTitle Name="Gestionnaire pour geler les joueurs"/>
+    <Options Name="Options"/>
+    <Settings Name="Options">
+      <FreezePlayersAtStartup Name="Geler les joueurs quand FMRTE démarre."/>
+      <!-- new 4.1.2 -->
+      <PlayersAttributes Name="Attributs des joueurs">
+        <Attributes Name="Attributs"/>
+        <AttributesToIgnore Name="Attributs à ignorer"/>
+        <AttributesCanIncrease Name="Attributs qui peuvent progresser"/>
+      </PlayersAttributes>
+      <StaffAttributes Name="Attributs du staff">
+        <Attributes Name="Attributs" />
+        <AttributesToIgnore Name="Attributs à ignorer" />
+        <AttributesCanIncrease Name="Attributs qui peuvent progresser" />
+      </StaffAttributes>
+    </Settings>
+    <Buttons>
+      <Freeze Name="Geler"/>
+      <Unfreeze Name="Dégeler"/>
+      <FreezeAll Name="Geler tout le monde"/>
+      <UnfreezeAll Name="Dégeler tout le monde"/>
+      <FreezeSelection Name="Geler sélection"/>
+      <UnFreezeSelection Name="Dégeler sélection"/>
+      <FreezeTeam Name="Géler l'équipe"/>
+      <UnfreezeTeam Name="Dégeler l'équipe"/>
+    </Buttons>
+  </Freezer>
+
+  <CurrencyManager Name="Gestionnaire de Monnaie">
+    <Currency Name="Monnaie"/>
+    <Value Name="Valeur"/>
+    <Symbol Name="Symbole"/>
+    <Buttons>
+      <New Name="Nouveau"/>
+      <Rem Name="Supprimer"/>
+      <Save Name="Sauvegarder"/>
+    </Buttons>
+  </CurrencyManager>
+
+  <AddFeatures>
+    <Info Name="Information"/>
+    <New>
+      <Relation Name="Nouvelle relation"/>
+      <Clausule Name="Nouvelle clause"/>
+    </New>
+    <Rem Name="Supprimer"/>
+    <Currently Name="Actuellement"/>
+    <MaxAllowed Name="Max"/>
+  </AddFeatures>
+
+  <TransferPreferences Name="Préférences des transferts">
+    <NationTransferPreferences Name="Nations"/>
+    <ContinentTransferPreferences Name="Continents"/>
+    <RegionTransferPreferences Name="Régions"/>
+    <Rating Name="Note"/>
+    <ScoutingKnowledge Name="Connaissances du recruteur"/>
+    <MinimumAge Name="Age minimum"/>
+    <MaximumAge Name="Age maximum"/>
+  </TransferPreferences>
+
+  <SupporterProfile Name="Profil des supporters">
+    <Loyalty Name="Loyauté"/>
+    <Passion Name="Passion"/>
+    <Patience Name="Patience"/>
+    <Affluence Name="Richesse"/>
+    <Temperament Name="Tempérament"/>
+    <SaveMessage Name="Profil des supporters sauvegardés!"/>
+  </SupporterProfile>
+
+  <TacticalAttributes Name="Caract. tactiques">
+    <Attacking Name="Attaque"/>
+    <Depth Name="Profondeur"/>
+    <Directness Name="Style direct"/>
+    <Flamboyancy Name="Extravagance"/>
+    <Flexibility Name="Flexibilité"/>
+    <FreeRoles Name="Rôle libre"/>
+    <Marking Name="Marquage"/>
+    <Offside Name="Hors-jeu"/>
+    <Passing Name="Pressing"/>
+    <SittingBack Name="Attentisme"/>
+    <Tempo Name="Rythme"/>
+    <UseOfPlaymaker Name="Util. d'un meneur"/>
+    <Width Name="Largeur"/>
+    <PreferredFormation Name="Formation préférée"/>
+    <SecondPreferredFormation Name="Seconde formation préférée"/>
+    <DefensiveFormation Name="Formation défensive"/>
+    <AttackingFormation Name="Formation offensive"/>
+    <SaveMessage Name="Caract. tactiques sauvegardées!"/>
+  </TacticalAttributes>
+
+  <GenericVersionWizzard Name="FM16 - Faire fonctionner FMRTE avec la version de votre Football Manager 2016 (Assistant)">
+    <Step1>
+      <Description Name="Étape 1/6
+
+Votre version de Football Manager (#####) doit être mise à jour car FMRTE ne la supporte pas.
+
+Pour régler le problème, vous avez 3 options: 1° Vérifier si une nouvelle version de FMRTE est disponible. 2° Suivre l'assistant pour que FMRTE essaye de faire fonctionner la nouvelle version. 3° Copier le code généré par un autre utilisateur qui a déjà suivi les étapes.
+
+Que voulez-vous faire ?"/>
+
+      <Options>
+        <CheckOnline Name="Vérifier si une nouvelle version de FMRTE est disponible"/>
+        <UseThisWizzard Name="Utiliser l'assistant pour faire fonctionner FMRTE avec la nouvelle version (RECOMMANDÉ)"/>
+        <UseCustomCode Name="Utiliser un code déjà géréné"/>
+      </Options>
+      <ErrorMessages>
+        <InvalidCode Name="Le code que vous avez entré n'est pas valide !"/>
+      </ErrorMessages>
+    </Step1>
+
+    <Step2>
+      <Description Name="Étape 2/6
+
+Pour faire fonctionner FMRTE avec votre version de Football Manager, vous devez confirmer que la date ci-dessous est bien la date actuelle dans votre partie, si ce n'est pas le cas, merci d'indiquer la bonne date et de cliquer sur suivant.
+
+NOTE : Il est très important que vous indiquiez la bonne date, autrement, FMRTE ne sera pas capable de charger votre partie !"/>
+      <CurrentDate Name="Date actuelle dans le jeu:"/>
+      <DateFormat Name="(jj / mm / aaaa)"/>
+      <!-- Please translate only the format, do not change it -->
+      <ErrorMessages>
+        <InvalidDate Name="Merci de spécifier la date actuelle dans le jeu."/>
+        <WrongDate Name="Vérifiez que la date actuelle dans le jeu est correcte car FMRTE ne le vérifiera pas et pourrait ne pas fonctionner."/>
+      </ErrorMessages>
+    </Step2>
+
+    <Step3>
+      <Description Name="Étape 3/6
+
+FMRTE a besoin de connaitre l'ID de votre sauvegarde, sinon, certaines fonctions ne fonctionneront pas correctement.
+
+Pour aider FMRTE à trouver l'ID de votre sauvegarde, vous devez faire ceci:
+  1- Premièrement, dans Football Manager, créer une nouvelle Sélection (il suffit d'ajouter un ou deux joueurs à votre sélection)
+  2- Sauvegardez votre Sélection.
+  3- Exporter votre Sélection. (le lieu n'est pas important, il suffit de s'en souvenir)
+  4- Maintenant, dans cette fenêtre, appuyer sur 'Charger la shortlist' et sélectionner la shortlist dans le répertoire où vous l'avez enregistrée précédemment !
+  5- Appuyer sur le bouton 'Suivant'"/>
+      <SaveGameID Name="ID de votre sauvegarde: "/>
+      <LoadShortlist Name="Charger la shortlist"/>
+    </Step3>
+
+    <Step4>
+      <Description Name="Étape 4/6
+
+FMRTE va maintenant vous montrer 5 personnes.
+Pour chaque personne, vous devez vérifier leurs profils dans votre Football Manager et vérifier leur rôle (Joueur, Staff, Agent etc...)
+Ensuite, Changer le rôle de chacun dans la liste déroulante (vous devriez normalement avoir 1 Joueur, 1 Staff, 1 Joueur-Staff, 1 Agent, 1 Joueur humain (vous)
+Soyez bien sûr que vous avez sélectionné le bon rôle pour chaque personne, sinon, FMRTE ne fonctionnera correctement !"/>
+      <ErrorMessages>
+        <NoPersonDetected Name="FMRTE n'a trouvé personne, vous devez malheureusement attendre qu'une nouvelle version de FMRTE soit disponible !"/>
+        <EmptyTypes Name="Merci de vérifier que chaque personne a bien un rôle associé dans la liste déroulante !"/>
+        <RepeatedPersonTypes Name="Vous avez deux personnes ou plus qui ont le même rôle, merci de vérifier votre liste"/>
+      </ErrorMessages>
+      <PersonTypes>
+        <Player Name="Joueur"/>
+        <Staff Name="Staff"/>
+        <PlayerStaff Name="Joueur-Staff"/>
+        <Agent Name="Agent"/>
+        <Gamer Name="Joueur humain"/>
+      </PersonTypes>
+    </Step4>
+
+    <Step5>
+      <Description Name="Étape 5/6
+
+Nous arrivons à la dernière étape, maintenant nous devons régler le problème du bouton 'Fenêtre FM actuelle', si vous ne réglez pas ce problème, certaines fonctions ne fonctionneront pas !
+
+Pour régler le problème du bouton 'Fenêtre FM actuelle', vous devez faire ceci:
+  1- Allez sur FM et recherchez 'PLAYER NAME'
+  2- Ouvrez son profil de joueur et allez dans l'onglet 'Positions'
+  3- Soyez bien sûr d'être dans l'onglet 'Positions' (avec le terrain et les ronds de couleurs selon la position)
+  4- Dans FMRTE, appuyez sur le bouton 'Régler le problème'
+  5- Attendez que FMRTE vous affiche le nom du joueur
+  6- Appuyer sur 'Suivant'"/>
+      <PlayerDetected Name="Detecté:"/>
+      <FixIt Name="Régler le problème"/>
+      <Messages>
+        <NotFound Name="FMRTE est incapable de détecter '#####'. Vérifiez que vous êtes bien dans le profil du joueur sur l'onglet 'Positions'. Si c'est le cas, appuyez sur le bouton Terminer, c'est fini mais vous ne pourrez pas utiliser cette fonction à l'avenir !"/>
+        <Found Name="Detecté: "/>
+      </Messages>
+    </Step5>
+    <Step6>
+      <Description Name="ÉTAPE 6/6
+
+C'est terminé!
+
+Si vous le désirez, vous pouvez copier/coller le code qui a été généré afin de le partager avec d'autres utilisateurs qui ont la même version que vous pour leur éviter de recommencer toutes ces étapes.
+
+Si pour une raison quelconque vous devez recommencer ces opérations, il vous faudra supprimer le dossier 'SupportedVersions' à la racine du dossier de FMRTE.
+
+N'oubliez pas de mettre à jour FMRTE lorsqu'une nouvelle version est disponible. Utiliser FMRTE par ce biais peut fonctionner ou ne pas fonctionner correctement..
+
+SI VOUS DÉCOUVREZ DES DONNÉES ÉTRANGES OU SUSPICIEUSES SUR FMRTE, ARRÊTEZ IMMÉDIATEMENT L'UTILISATION DU LOGICIEL, CELA POURRAIT ENDOMMAGER VOTRE SAUVEGARDE !"/>
+    </Step6>
+    <Buttons>
+      <Cancel Name="Annuler"/>
+      <Previous Name="&lt; Précédent"/>
+      <!-- &lt; is the < symbol -->
+      <Next Name="Suivant &gt;"/>
+      <!-- &gt; is the > symbol -->
+      <Finish Name="Terminer"/>
+    </Buttons>
+    <Messages>
+      <NewVersionAdded Name="Nouvelle version ajoutée, merci d'appuyer sur le bouton Charger pour voir si la nouvelle version prise en compte fonctionne !"/>
+    </Messages>
+  </GenericVersionWizzard>
+
+  <FindPersons Name="ERREUR - Aucune personne détectée !">
+    <PersonsDetected Name="FMRTE n'a pas pu détecter les rôles de personnes dans le jeu.
+	Pour toutes les personnes listées ci-dessous, vous devez regarder dans le jeu (en faisant un copier-coller de leur nom) leur type (Joueur, Staff, etc.) et faire correspondre leur rôle ici par rapport au jeu.
+	Soyez sûrs lors de votre choix du rôle pour chaque personne, sinon FMRTE ne fonctionnera pas correctement !"/>
+    <ErrorMessages>
+      <NoPersonDetected Name="FMRTE n'a pu trouver une personne.
+	Assurez-vous que votre jeu a fini de charger votre partie sur Football Manager avant de lancer FMRTE. Si c'est déjà le cas, merci d'attendre une nouvelle version de FMRTE qui supportera votre version du jeu"/>
+      <EmptyTypes Name="Veuillez vous assurez que chaque personne listée possède un type d'association différent"/>
+      <RepeatedPersonTypes Name="Vous avez deux personnes ou plus ayant le même type de personne associée, merci de corriger cela."/>
+    </ErrorMessages>
+    <PersonTypes>
+      <Player Name="Joueur"/>
+      <Staff Name="Staff"/>
+      <PlayerStaff Name="Joueur avec des attibuts de staff"/>
+      <Agent Name="Agent"/>
+      <Gamer Name="Joueur humain"/>
+    </PersonTypes>
+  </FindPersons>
+
+  <FMRTE_Menu Name="FMRTE">
+    <Settings Name="Options"/>
+    <HomePage Name="Visiter le site de FMRTE"/>
+    <AboutFMRTE Name="A propos"/>
+  </FMRTE_Menu>
+
+  <Award Name="Récompense">
+    <Overview Name="Informations"/>
+    <SaveMessage Name="L'information sur la récompense a été sauvegardé !"/>
+    <Name Name="Nom"/>
+    <ShortName Name="Nom court"/>
+    <ID Name="ID"/>
+    <Nation Name="Nation"/>
+    <Continent Name="Continent"/>
+    <Competition Name="Compétition"/>
+    <Reputation Name="Réputation"/>
+    <NationalReputation Name="Réputation nationale"/>
+    <WinnerHomeReputation Name="Réputation nationale (vainqueur)"/>
+    <WinnerWorldReputation Name="Réputation mondiale (vainqueur)"/>
+    <Common>
+      <ChangeCompetition Name="Changer la compétition de la récompense"/>
+      <SearchCompetitionMessage Name="Entrer le nom de la compétition à rechercher."/>
+    </Common>
+  </Award>
+
+  <EventsSubscribed Name="Évènements suivis">
+    <Subscription Name="Abonnement" Plural="Abonnements"/>
+    <Event Name="Event" Plural="Évènement"/>
+    <Messages>
+      <InformationMessage Name="Information"/>
+      <ErrorIncompleteCondition Name="Une des condition n'est pas remplie. Veuillez remplir toutes les conditions avant d'enregistrer !"/>
+      <ErrorMessage Name="Erreur"/>
+      <ErrorNoConditionAdded Name="Vous devez ajouter au moins une condition !"/>
+      <ErrorInvalidEventType Name="Évènement invalide."/>
+      <ErrorEmptyTarget Name="Vous devez sélectionner au moins un objet à suivre."/>
+      <AskBeforeDelete Name="Êtes-vous sûrs de vouloir supprimer #NUM_ITEMS_TO_REMOVE# #DELETE_TYPE# ?"/>
+      <UnsavedChanges Name="Toute modification non sauvegardée sera perdue."/>
+      <WantToContinue Name="Voulez-vous continuer ?"/>
+      <ChangingEventType Name="Changer le type d'évènement créera un nouvel évènement vide."/>
+    </Messages>
+    <MenuActions>
+      <Delete Name="Supprimer"/>
+      <Unsubscribe Name="Désabonner"/>
+      <Subscribe Name="Abonner"/>
+      <MarkAsRead Name="Marquer comme lu"/>
+      <MarkAsUnread Name="Marquer comme non-lu"/>
+    </MenuActions>
+    <Status Name="Statut de l'évènement">
+      <Subscribed Name="Abonné"/>
+      <Unsubscribed Name="Désabonné"/>
+    </Status>
+    <EventType Name="Type d'évènement">
+      <Wonderkids Name="Suivre nouvelles pépites" NameOnList="SPépites suivies"/>
+      <Player Name="Suivre les joueurs" NameOnList="Joueurs suivis"/>
+      <Staff Name="Suivre staff" NameOnList="Staff suivis"/>
+      <Club Name="Suivre clubs" NameOnList="Clubs suivis"/>/>
+    </EventType>
+    <AttributeTriggerKind>
+      <And Name="Et"/>
+      <Or Name="Ou"/>
+    </AttributeTriggerKind>
+    <ValueChangeType>
+      <Equal Name="Équivalent"/>
+      <GreaterThan Name="Meilleur que"/>
+      <LesserThan Name="Moins bon que"/>
+      <Increment Name="Améliorer"/>
+      <HasChanged Name="A changé"/>
+      <HasIncreased Name="A progressé"/>
+      <HasDecreased Name="A diminué"/>
+    </ValueChangeType>
+    <EventsManager Name="Gestion d'évènements">
+      <AddEditEvent Name="Ajouter/éditer évènement"/>
+      <EventSettings Name="Paramètres d'évènements">
+        <Subscribe Name="S'abonner"/>
+        <Unsubscribe Name="Se désabonner"/>
+        <IsRecurrent Name="Répéter après achèvement"/>
+      </EventSettings>
+      <Conditions Name="Conditions" Singular="Condition"/>
+      <Items>
+        <Players Name="Joueurs suivis" Plural="Joueurs"/>
+        <StaffMembers Name="Membres du staff suivis" Plural="Staff"/>
+        <Clubs Name="Clubs suivis" Plural="Clubs"/>
+      </Items>
+      <Buttons>
+        <NewEvent Name="Nouveau"/>
+        <SaveEvent Name="Sauvegarder"/>
+        <ResetEvent Name="Annuler"/>
+        <AddCondition Name="Ajouter condition"/>
+        <RemoveCondition Name="Supprimer condition"/>
+        <Add Name="Ajouter"/>
+        <Remove Name="Supprimer"/>
+      </Buttons>
+      <EventsList Name="Évènements suivis">
+        <Descriptions>
+          <Wonderkids Name="Suivi de nouvelles pépites, commencé le #DATE# (#SUBSCRIBE_STATUS#)"/>
+          <GenericItems Name="Suivi de #NUM_CONDITIONS# attributs de #ITEMS_NUMBER_OR_NAME# #ITEMS_TYPE_OR_NOTHING# (#SUBSCRIBE_STATUS#)"/>
+          <!-- example 1: 'Tracking 2 attributes of 5 players'         - Here #ITEMS_TYPE_OR_NOTHING# is the item in plural defined above -->
+          <!-- example 2: 'Tracking 2 attributes of Cristiano Ronaldo' - Here #ITEMS_TYPE_OR_NOTHING# is nothing because we use the item name -->
+        </Descriptions>
+      </EventsList>
+    </EventsManager>
+    <Notification Name="Notification" Plural="Notifications" NotificationsReceived="Notifications reçues">
+      <Date Name="Date : "/>
+      <NewNotificationReceived Name="Nouvelles notifications reçues"/>
+      <NoNotification Name="Vous n'avez pas sélectionné de notification"/>
+      <ChangesDetected Name="Changements détectés"/>
+      <WonderKidsList Name="Informations pépites"/>
+      <List>
+        <Condition Name="Condition"/>
+        <Was Name="était"/>
+        <Now Name="est maintenant"/>
+        <ConditionsMet Name="Conditions respectées"/>
+        <Type Name="type"/>
+      </List>
+      <Messages>
+        <QuantityWords>
+          <SomeOf Name="Quelques"/>
+          <AllOf Name="Toutes les"/>
+        </QuantityWords>
+        <Generic Name="Selon les informations obtenues par nos agents secrets, FMRTE est en mesure d'annoncer que #QUANTITY_WORDS# sélectionnées #CONDITIONS_PLURAL_SINGULAR# pour #ITEMS_NUMBER_OR_NAME# #ITEMS_TYPE_OR_NOTHING# correspondent."/>
+        <Wonderkids Name="Certains de nos meilleurs agents sur le terrain ont été en mesure de trouver #NUM_NEW_WONDERKIDS# nouvelles pépites."/>
+        <Wonderkids_2 Name="Ils ont rempli un rapport avec quelques informations de base sur ces joueurs, incluant les clubs potentiellement intéressés. Donc Activer-vous avant qu'il ne soit trop tard !"/>
+        <WonderkidsSmallDescription Name="FMRTE detected #NUM_NEW_WONDERKIDS# new wonderkids"/>
+        <!-- Normal: #QUANTITY_WORDS#       can be for example: all of  -->
+        <Confidential Name="Les informations suivantes sont strictement confidentionnelles, donc si quelqu'un demande, vous ne les avez pas obtenues par nous !"/>
+        <EventIsRunning Name="Nos agents vont rester sur le terrain à la recherche de plus d'informations concernant cet évènement."/>
+        <Unsubscribe Name="Si vous avez peur et que vous voulez annuler cet évènements, appuiyez sur #BUTTON_NAME# "/>
+        <GenericSmallDescription Name="#QUANTITY_WORDS# #NUM_CONDITIONS# sélectionnées #CONDITIONS_PLURAL_SINGULAR# pour  #ITEMS_NUMBER_OR_NAME# #ITEMS_TYPE_OR_NOTHING# correspondent."/>
+      </Messages>
+    </Notification>
+    <ContextMenus>
+      <NotifyMeWhen Name="Notify me when..."/>
+      <Persons>
+        <ContractEnds6Months Name="Contract ends in 6 months"/>
+        <ReachedPA Name="Reaches his PA"/>
+      </Persons>
+      <Players>
+        <NewClubsInterested Name="New clubs interested"/>
+        <IsUnhappy Name="Is unhappy"/>
+      </Players>
+    </ContextMenus>
+  </EventsSubscribed>
+
+  <MediaSource Name="Source média">
+    <Overview Name="Vue générale"/>
+    <SaveMessage Name="L'information sur la source de média a été sauvegardé !"/>
+    <Name Name="Nom"/>
+    <ID Name="ID"/>
+    <URL Name="URL"/>
+    <Period Name="Période">
+      <Anytime Name="Quotidiennement"/>
+      <WeekdayMorning Name="Matins de la semaine"/>
+      <Sunday Name="Dimanche"/>
+      <Weekly Name="Hebdomadaire"/>
+      <Monthly Name="Mensuel"/>
+      <BiMonthly Name="Bimensuel"/>
+      <Quarterly Name="Trimestriel"/>
+      <Yearly Name="Anuellement"/>
+      <WeekdayEvening Name="Soirs de la semaine"/>
+      <Monday Name="Lundi"/>
+      <Tuesday Name="Mardi"/>
+      <Wednesdays Name="Mercredi"/>
+      <Thursday Name="Jeudi"/>
+      <Friday Name="Vendredi"/>
+      <Saturday Name="Samedi"/>
+    </Period>
+    <DateLastPublished Name="Date de la dernière publication"/>
+    <Scope Name="Portée">
+      <Club Name="Club"/>
+      <Local Name="Locale"/>
+      <Regional Name="Régionale"/>
+      <National Name="Nationale"/>
+      <Continental Name="Continentale"/>
+      <Worldwide Name="Mondiale"/>
+      <Competition Name="Compétition"/>
+    </Scope>
+    <Style Name="Style">
+      <NotSet Name="Pas défini"/>
+      <Tabloid Name="Tabloïd"/>
+      <Broadsheet Name="Sérieux"/>
+    </Style>
+    <Types Name="Types">
+      <NotSet Name="Pas défini"/>
+      <Newspaper Name="Journal"/>
+      <Magazine Name="Magazine"/>
+      <Fanzine Name="Fanzine"/>
+      <Radio Name="Radio"/>
+      <TV Name="TV"/>
+      <Website Name="Site internet"/>
+      <Bookmaker Name="Paris sportifs"/>
+      <InjurySponsor Name="Presse à scandale"/>
+      <KitSponsor Name="Sponsor d'équipement"/>
+    </Types>
+    <LinkedMedia Name="Média lié"/>
+    <Nation Name="Nation"/>
+    <Continent Name="Continent"/>
+  </MediaSource>
+  <TrialEnded Name="FMRTE - Version d'essai expiré">
+    <Buttons>
+      <Donate Name="Acquérir une licence" />
+      <Next Name="OK" />
+    </Buttons>
+    <WelcomeInfo Name="Votre version d'essai de FMRTE a expiré ou vous avez perdu votre connexion internet.
+
+	 Si vous voulez continuer d'utiliser toutes les fonctions de FMRTE, vous devez acquérir une clé de licence.  	 
+
+	 Pour acquérir une clé de licence pour FMRTE 16, appuyer sur le bouton 'Acquérir une licence' ou connectez-vous sur www.fmrte.com" />
+    <ProtectedFeature Name="Pour pouvoir utiliser cette fonction, vous devez activer FMRTE avec une clé de licence valide." />
+  </TrialEnded>
+  <ActivatioWizzard Name="FMRTE - Assistant d'activation">
+    <Buttons>
+      <Activate Name="Activer"/>
+      <Donate Name="Donner"/>
+      <Next Name="Suivant &gt;"/>
+      <Previous Name="&lt; Précédent"/>
+      <Cancel Name="Annuler"/>
+      <Finish Name="Terminer"/>
+      <CopyToClipboard Name="Copier dans presse-papier"/>
+      <Browse Name="Parcourir..." Title="FMRTE fichiers de licences (.bin)|*.bin"/>
+    </Buttons>
+    <ActivationMessages>
+      <Successful Name="Licence installée. Activation validée."/>
+      <InvalidKey Name="Clé invalide"/>
+      <InvalidFile Name="Le fichier que vous avez ajouté n'existe pas !"/>
+      <Successful Name="Licence installée. Activation validée."/>
+    </ActivationMessages>
+    <Messages>
+      <WelcomeInfo Name="Cet assistant vous guidera à travers l'activation de FMRTE.
+	  
+	  Si vous n'avez pas de licence, vous pouvez en obtenir une en faisant un don au projet.
+	  
+	  Comment voulez-vous activer FMRTE ?"/>
+      <ActivateOnline Name="Je veux activer en ligne"/>
+      <ActivateOffline Name="Je veux utiliser un fichier de licence (hors-ligne)"/>
+      <ActivateWithFile Name="J'ai un fichier de licence que je veux installer."/>
+      <EnterActivationKey Name="Merci d'entrer votre clé d'activation :"/>
+      <ProtectedFeature Name="Pour utiliser cette fonction, vous devez activer FMRTE avec une licence valide."/>
+      <OfflineActivationGetRequestToken Name="Cette requête devrait être faite sur notre site http://licenses.fmrte.com pour obtenir une licence :"/>
+      <OfflineActivationInfo Name="Après avoir obtenu votre licence, vous devriez utiliser cet assistant pour compléter votre activation."/>
+      <LicenseFileLocation Name="Entrer le chemin de votre fichier de licence :"/>
+      <ConnectingToServer Name="Obtention de la licence sur le serveur..."/>
+      <ReadingLicenseFile Name="Lecture de la licence..."/>
+    </Messages>
+    <FMRTELicenseStatus Name="Licence FMRTE">
+      <MultipleLicenses Name="Licences installées et activées"/>
+      <InstalledAndActivated Name="Licence installée et activée"/>
+      <NotLicensed Name="Pas de licence"/>
+    </FMRTELicenseStatus>
+
+  </ActivatioWizzard>
+
+  <Person Name="Personne">
+    <IsRetiring Name="Est retraitée"/>
+    <SkinColour Name="Couleur de peau"/>
+    <Ethnicity Name="Éthnicité"/>
+    <HairColour Name="Couleur de cheveux"/>
+  </Person>
+</MainWindow>
